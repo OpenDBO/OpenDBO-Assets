@@ -1,9 +1,0 @@
-fontlib BaseFontConfig "fonts_all.swf";
-[ map ] "$IMECandidateListFont"	= "Arial Unicode MS", Original;
-[ map ] "$NormalFont"			= "Arial Unicode MS", Original;
-[ map ] "$NormalFont"			= "Arial Unicode MS", Original;
-
-fontlib "flashfont_tw.swf";
-map "$NormalFont"				= "Microsoft JhengHei";
-map "$IMECandidateListFont"		= "Microsoft JhengHei";
-

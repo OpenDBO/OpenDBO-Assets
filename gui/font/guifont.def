@@ -1,9 +1,0 @@
-// Font Define. 
-//
-// ex) UserDefineName = Filename, Fontname;
-// If font is systemfont, insert "system" instead of fontfilename.
-
-Default = msjhbd.ttc, Microsoft JhengHei;
-detail = DFHeiMedium.TTF, DFHeiMedium;
-//Default = SomaM.ttf, SomaM;
-//detail = SomaM.ttf, SomaM;
