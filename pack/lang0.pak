@@ -308,7 +308,8 @@ DST_CHAR_CAN_CHANGE_CLASS="Need Master Class"
 DST_CHAR_GROWN_DOWN="You are a kid!"
 DST_CHAR_GROWN_UP="You are an adult!"
 DST_CHAR_SERVER_CONNECT_FAIL="[align = ""center""][font size = ""12"" color=""f4d762""]Connection Failed[/font][br][br][font size = ""10"" color=""f36a7c""]Failed to connect to[br]Character Server.[/font][br][br][font size = ""10"" color=""ffffff""]Please try again later.[/font]"
-DST_CHAR_SERVER_EXIT="[align = ""center""][font size = ""12"" color=""f4d762""]Log Out[/font][br][br][font size = ""10"" color=""269eff""]Do you wish to return to the lobby?[/font]"
+DST_CHAR_SERVER_EXIT="[align = ""center""][font size = ""12"" color=""f4d762""]Log Out[/font][br][br][font size = ""10"" color=""269eff""]Do you wish to return to the lobby?[/font]"
+
 
 
 
@@ -4297,7 +4298,7 @@ DST_CHAR_CAN_CHANGE_CLASS="Need Master Class"
 DST_CHAR_GROWN_DOWN="You are a kid!"
 DST_CHAR_GROWN_UP="You are an adult!"
 DST_CHAR_SERVER_CONNECT_FAIL="[align = ""center""][font size = ""12"" color=""f4d762""]Connection Failed[/font][br][br][font size = ""10"" color=""f36a7c""]Failed to connect to[br]Character Server.[/font][br][br][font size = ""10"" color=""ffffff""]Please try again later.[/font]"
-DST_CHAR_SERVER_EXIT="[align = ""center""][font size = ""12"" color=""f4d762""]Log Out[/font][br][br][font size = ""10"" color=""269eff""]Di yiy wish to return to the lobby?[/font]"
+DST_CHAR_SERVER_EXIT="[align = ""center""][font size = ""12"" color=""f4d762""]Log Out[/font][br][br][font size = ""10"" color=""269eff""]Do you wish to return to the lobby?[/font]"
 
 
 
