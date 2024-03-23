@@ -1712,7 +1712,9 @@ DST_LOGIN="Start"
 DST_LOGIN_CONTRACT="Contract"
 DST_LOGIN_CREDIT="Credits"
 DST_LOGIN_ID="User:"
-DST_LOGIN_NEW_ACCOUNT="Game Policies"
+DST_LOGIN_NEW_ACCOUNT="New Account"
+
+
 DST_LOGIN_PASSWARD="Pass:"
 DST_LOGIN_PLAY_MOVIE="Movie"
 DST_MAILSYSTEM_ALREADY_OPEN="Mail window is already open."
@@ -6962,7 +6964,8 @@ DST_RECALL_START_MASCOT_MB_CONFIRM="[align = ""center""][font size = ""12"" colo
 DST_RECALL_STOP_MASCOT_MB_CONFIRM="[align = ""center""][font size = ""12"" color=""f4d762""]Dismiss Pet[/font][br][br][font size = ""10"" color=""ffffff""]Dismiss your Pet?[/font]"
 DST_RECORD="Record"
 DST_REFUND_POLICY="Refund Policy"
-DST_REFUND_POLICY_URL="https://dboglobal.to/donate"
+DST_REFUND_POLICY_URL="https://opendbo.org/donate"
+
 DST_REGEN_MB_DOJO_RETRY_BTN="Retry"
 DST_REGEN_MB_MAINWORLD_MOVE_TO_POPOSTONE_BTN="Respawn"
 DST_REGEN_MB_MAINWORLD_USE_POPOSTONE_CHUNK_BTN="Revive"
