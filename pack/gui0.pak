@@ -86202,7 +86202,7 @@ dialog dlgMain
 	}
 }surface "srfDlgMain"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop2";
 
 	x		= 0;
@@ -86226,7 +86226,7 @@ dialog dlgMain
 
 surface "srfUpButtonUp"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop2";
 
 	x		= 0;
@@ -86250,7 +86250,7 @@ surface "srfUpButtonUp"
 
 surface "srfUpButtonFocus"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop2";
 
 	x		= 0;
@@ -86274,7 +86274,7 @@ surface "srfUpButtonFocus"
 
 surface "srfUpButtonDown"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop2";
 
 	x		= 0;
@@ -86298,7 +86298,7 @@ surface "srfUpButtonDown"
 
 surface "srfUpButtonDis"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop2";
 
 	x		= 0;
@@ -86322,7 +86322,7 @@ surface "srfUpButtonDis"
 
 surface "srfDownButtonUp"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop2";
 
 	x		= 0;
@@ -86346,7 +86346,7 @@ surface "srfDownButtonUp"
 
 surface "srfDownButtonFocus"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop2";
 
 	x		= 0;
@@ -86370,7 +86370,7 @@ surface "srfDownButtonFocus"
 
 surface "srfDownButtonDown"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop2";
 
 	x		= 0;
@@ -86394,7 +86394,7 @@ surface "srfDownButtonDown"
 
 surface "srfDownButtonDis"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop2";
 
 	x		= 0;
@@ -86418,7 +86418,7 @@ surface "srfDownButtonDis"
 
 surface "srfBuybar"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop2";
 
 	x		= 0;
@@ -86442,7 +86442,7 @@ surface "srfBuybar"
 
 surface "srfBtnZennyFoc"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop2";
 
 	x		= 0;
@@ -86575,15 +86575,16 @@ surface "srfCommonBtnDis"
 
 	button	ExitButton
 	{
-		x		= 301;
-		y		= 5;
-		width		= 15;
+		x		= 300;
+		y		= 4;
+		width		= 16;
 		height		= 16;
 
 		surface_file 	= "GameCommon.srf";
-		surface_up 	= "srfCloseBtnUp";
-		surface_down 	= "srfCloseBtnDown";
-		surface_focus 	= "srfCloseBtnFoc";
+		surface_up 	= "srfClose2BtnUp";
+		surface_down 	= "srfClose2BtnDown";
+		surface_focus 	= "srfClose2BtnFoc";
+		surface_disable	= "srfClose2BtnDis";
 	}
 
 	tabbutton TabButton
@@ -86734,7 +86735,7 @@ resource "rsrNetPyShop2"
 	file	= "wnd_netpy_shop2.png";
 }surface "srfDialog"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop1";
 
 	x		= 0;
@@ -86758,7 +86759,7 @@ resource "rsrNetPyShop2"
 
 surface "srfBackLineTop"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop1";
 
 	x		= 9;
@@ -86782,7 +86783,7 @@ surface "srfBackLineTop"
 
 surface "srfBackLineCenter"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop1";
 
 	x		= 9;
@@ -86806,7 +86807,7 @@ surface "srfBackLineCenter"
 
 surface "srfBackLineBottom"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop1";
 
 	x		= 9;
@@ -86830,7 +86831,7 @@ surface "srfBackLineBottom"
 
 surface "ItemPanel"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop2";
 
 	x		= 0;
@@ -86854,7 +86855,7 @@ surface "ItemPanel"
 
 surface "srfPrePageButton"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop1";
 
 	x		= 0;
@@ -86878,7 +86879,7 @@ surface "srfPrePageButton"
 
 surface "srfPrePageButtonFocus"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop1";
 
 	x		= 0;
@@ -86902,7 +86903,7 @@ surface "srfPrePageButtonFocus"
 
 surface "srfPrePageButtonDown"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop1";
 
 	x		= 0;
@@ -86926,7 +86927,7 @@ surface "srfPrePageButtonDown"
 
 surface "srfPrePageButtonDis"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop1";
 
 	x		= 0;
@@ -86950,7 +86951,7 @@ surface "srfPrePageButtonDis"
 
 surface "srfNextPageButton"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop1";
 
 	x		= 0;
@@ -86974,7 +86975,7 @@ surface "srfNextPageButton"
 
 surface "srfNextPageButtonFocus"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop1";
 
 	x		= 0;
@@ -86998,7 +86999,7 @@ surface "srfNextPageButtonFocus"
 
 surface "srfNextPageButtonDown"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop1";
 
 	x		= 0;
@@ -87022,7 +87023,7 @@ surface "srfNextPageButtonDown"
 
 surface "srfNextPageButtonDis"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop1";
 
 	x		= 0;
@@ -87046,7 +87047,7 @@ surface "srfNextPageButtonDis"
 
 surface "MoneyBackPanel"
 {
-	resource_file	= "Game.rsr";	
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop1";
 
 	x		= 0;
@@ -87070,7 +87071,7 @@ surface "MoneyBackPanel"
 
 surface "PageBackPanel"
 {
-	resource_file	= "Game.rsr";	
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop1";
 
 	x		= 0;
@@ -87094,7 +87095,7 @@ surface "PageBackPanel"
 
 surface "srfTabLeft"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop1";
 
 	x		= 0;
@@ -87118,7 +87119,7 @@ surface "srfTabLeft"
 
 surface "srfTabCenter"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop1";
 
 	x		= 0;
@@ -87142,7 +87143,7 @@ surface "srfTabCenter"
 
 surface "srfTabRight"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop1";
 
 	x		= 0;
@@ -87166,7 +87167,7 @@ surface "srfTabRight"
 
 surface "srfTabFocLeft"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop1";
 
 	x		= 0;
@@ -87190,7 +87191,7 @@ surface "srfTabFocLeft"
 
 surface "srfTabFocCenter"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop1";
 
 	x		= 0;
@@ -87214,7 +87215,7 @@ surface "srfTabFocCenter"
 
 surface "srfTabFocRight"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop1";
 
 	x		= 0;
@@ -87238,7 +87239,7 @@ surface "srfTabFocRight"
 
 surface "srfTabSelLeft"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop1";
 
 	x		= 0;
@@ -87262,7 +87263,7 @@ surface "srfTabSelLeft"
 
 surface "srfTabSelCenter"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop1";
 
 	x		= 0;
@@ -87286,7 +87287,7 @@ surface "srfTabSelCenter"
 
 surface "srfTabSelRight"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop1";
 
 	x		= 0;
@@ -87310,7 +87311,7 @@ surface "srfTabSelRight"
 
 surface "srfTabLine"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop1";
 
 	x		= 0;
@@ -87334,7 +87335,7 @@ surface "srfTabLine"
 
 surface "srfNetStoreBtnUp"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop1";
 
 	x		= 0;
@@ -87358,7 +87359,7 @@ surface "srfNetStoreBtnUp"
 
 surface "srfNetStoreBtnFocus"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop1";
 
 	x		= 0;
@@ -87382,7 +87383,7 @@ surface "srfNetStoreBtnFocus"
 
 surface "srfNetStoreBtnDown"
 {
-	resource_file	= "Game.rsr";
+	resource_file	= "NetPyShopGui.rsr";
 	resource_name	= "rsrNetPyShop1";
 
 	x		= 0;
