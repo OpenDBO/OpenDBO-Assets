@@ -308,7 +308,69 @@ DST_CHAR_CAN_CHANGE_CLASS="Need Master Class"
 DST_CHAR_GROWN_DOWN="You are a kid!"
 DST_CHAR_GROWN_UP="You are an adult!"
 DST_CHAR_SERVER_CONNECT_FAIL="[align = ""center""][font size = ""12"" color=""f4d762""]Connection Failed[/font][br][br][font size = ""10"" color=""f36a7c""]Failed to connect to[br]Character Server.[/font][br][br][font size = ""10"" color=""ffffff""]Please try again later.[/font]"
-DST_CHAR_SERVER_EXIT="[align = ""center""][font size = ""12"" color=""f4d762""]Log Out[/font][br][br][font size = ""10"" color=""269eff""]Returning to the Lobby.[/font][br][br][font size = ""10"" color=""ffffff""]Do you wish to Log Out?[/font]"
+DST_CHAR_SERVER_EXIT="[align = ""center""][font size = ""12"" color=""f4d762""]Log Out[/font][br][br][font size = ""10"" color=""269eff""]Do you wish to return to the lobby?[/font]"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 DST_CHAR_TITLE="Title"
 DST_CHAT_CAN_SEND_WHISPER_TO_ME="Can't whisper yourself."
 DST_CHAT_COMMAND="Command: %s"
@@ -4235,7 +4297,69 @@ DST_CHAR_CAN_CHANGE_CLASS="Need Master Class"
 DST_CHAR_GROWN_DOWN="You are a kid!"
 DST_CHAR_GROWN_UP="You are an adult!"
 DST_CHAR_SERVER_CONNECT_FAIL="[align = ""center""][font size = ""12"" color=""f4d762""]Connection Failed[/font][br][br][font size = ""10"" color=""f36a7c""]Failed to connect to[br]Character Server.[/font][br][br][font size = ""10"" color=""ffffff""]Please try again later.[/font]"
-DST_CHAR_SERVER_EXIT="[align = ""center""][font size = ""12"" color=""f4d762""]Log Out[/font][br][br][font size = ""10"" color=""269eff""]Returning to the Lobby.[/font][br][br][font size = ""10"" color=""ffffff""]Do you wish to Log Out?[/font]"
+DST_CHAR_SERVER_EXIT="[align = ""center""][font size = ""12"" color=""f4d762""]Log Out[/font][br][br][font size = ""10"" color=""269eff""]Di yiy wish to return to the lobby?[/font]"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 DST_CHAR_TITLE="Title"
 DST_CHAT_CAN_SEND_WHISPER_TO_ME="Can't whisper yourself."
 DST_CHAT_COMMAND="Command: %s"
@@ -5639,7 +5763,9 @@ DST_LOGIN="Start"
 DST_LOGIN_CONTRACT="Contract"
 DST_LOGIN_CREDIT="Credits"
 DST_LOGIN_ID="User:"
-DST_LOGIN_NEW_ACCOUNT="Game Policies"
+DST_LOGIN_NEW_ACCOUNT="New Account"
+
+
 DST_LOGIN_PASSWARD="Pass:"
 DST_LOGIN_PLAY_MOVIE="Movie"
 DST_MAILSYSTEM_ALREADY_OPEN="Mail window is already open."
