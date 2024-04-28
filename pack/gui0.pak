@@ -90742,6 +90742,48 @@ dialog dlgMain
 			surface_disable = "srfRadioOn";
 		}
 
+		button btnInfoDropItemOwnershipOn
+		{
+			x		= 150;
+			y		= 3;
+			width		= 65;
+			height		= 14;
+
+			togglemode	= true;
+
+			text_x		= "3";
+
+			text_downcoord_x= "0";
+			text_downcoord_y= "0";
+
+			surface_file 	= "OptionWnd.srf";
+			surface_up 	= "srfRadioOff";
+			surface_down 	= "srfRadioOn";
+			surface_focus 	= "srfRadioOff";
+			surface_disable = "srfRadioOn";
+		}
+
+		button btnInfoDropItemOwnershipOff
+		{
+			x		= 220;
+			y		= 3;
+			width		= 65;
+			height		= 14;
+
+			togglemode	= true;
+
+			text_x		= "3";
+
+			text_downcoord_x= "0";
+			text_downcoord_y= "0";
+
+			surface_file 	= "OptionWnd.srf";
+			surface_up 	= "srfRadioOff";
+			surface_down 	= "srfRadioOn";
+			surface_focus 	= "srfRadioOff";
+			surface_disable = "srfRadioOn";
+		}
+
 		button btnETCFriendOn
 		{
 			x		= 150;
