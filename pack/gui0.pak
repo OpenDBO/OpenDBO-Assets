@@ -90994,6 +90994,7 @@ dialog dlgMain
 			surface_disable = "srfRadioOn";
 		}
 
+
 		button btnETCExQuickSlot1On
 		{
 			x		= 150;
@@ -183579,13 +183580,23 @@ dialog dlgMain
 			text_color_blue = 68;
 		}
 
-		panel pnlBattleAttr
+		panel pnlDefenceAttr
 		{
 			x	= 300;
 			y	= 96;
 			width	= 17;
 			height	= 17;
-		}		
+		}	
+
+		panel pnlOffenceAttr
+		{
+			x	= 320;
+			y	= 96;
+			width	= 17;
+			height	= 17;
+		}	
+
+			
 
 		button btnRightSpin
 		{
