@@ -182993,7 +182993,6 @@ dialog dlgMain
 //			enabled = false;
 
 			text_style	= right;
-			text_style	= up;
 			text_color_red	= 255;
 			text_color_green = 255;
 			text_color_blue = 255;
@@ -183009,7 +183008,6 @@ dialog dlgMain
 //			enabled = false;
 
 			text_style	= right;
-			text_style	= up;
 			text_color_red	= 255;
 			text_color_green = 255;
 			text_color_blue = 255;
