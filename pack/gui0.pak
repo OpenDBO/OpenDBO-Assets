@@ -91498,6 +91498,13 @@ dialog dlgMain
 		height		= 304;
 	}
 
+	dialog dlgFilterList
+	{
+		x			= 21;
+		y			= 96;
+		width		= 288;
+		height		= 304;
+	}
 	dialog dlgGraphic
 	{
 		x			= 21;
