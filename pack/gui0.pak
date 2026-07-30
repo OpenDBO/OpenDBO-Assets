@@ -64713,6 +64713,22 @@ surface "srfEmptyRecipe"
 
 		surface_file = "StatusBar.srf";
 		surface	     = "srfBattleCombating";
+	}
+
+	panel pnlBattleAttributeWeapon
+	{
+		x	= -6;
+ 		y 	= 62;
+		width	= 25;
+		height	= 25;
+	}
+
+	panel pnlBattleAttributeArmor
+	{
+		x	= 8;
+ 		y 	= 84;
+		width	= 25;
+		height	= 25;
 	}	
 
 }
@@ -66943,8 +66959,7 @@ dialog dlgMain
 		height		= 276;
 		enabled		= false;
 
-		surface_file 	= "ItemChangeBattleAtt.srf";
-		surface		= "srfSlotBack";
+
 	}
 
    	staticbox stbTitle
