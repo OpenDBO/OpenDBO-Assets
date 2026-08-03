@@ -18457,7 +18457,7 @@ dialog dlgMain
 {
 	x	                = 0;
  	y 	                = 0;
-	width	            = 430;
+	width	            = 470;
 	height	            = 46;
 
     surface_file 	    = "Commercial.srf";
@@ -18467,10 +18467,10 @@ dialog dlgMain
 
     titlebar_x		    = 0;
 	titlebar_y		    = 0;
-	titlebar_width		= 430;
+	titlebar_width		= 470;
 	titlebar_height		= 46;
 
-    //! ¹è°æ ¹é±×¶ó¿îµå ÀÌ¹ÌÁö
+    //! ï¿½ï¿½ï¿½ ï¿½ï¿½×¶ï¿½ï¿½ï¿½ ï¿½Ì¹ï¿½ï¿½ï¿½
 	staticbox stBackGround
 	{
 		x   		= 3;
@@ -18479,7 +18479,7 @@ dialog dlgMain
 		height 		= 46;
 
         enabled	    = false;
-        //! ½ºÆ®¸µÀ» À§ÇÑ StaticBox
+        //! ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ StaticBox
 		staticbox stString
 		{
 		    x 		            = 0;
@@ -18496,8 +18496,8 @@ dialog dlgMain
 		    font_attribute	    = 0;
             dynamic		        = true;
 	    }
-        //! ½ºÆ®¸µÀ» À§ÇÑ StaticBox
-		staticbox stSecoundString
+        //! ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ StaticBox
+		staticbox stSecondString
 		{
 		    x 		            = 0;
 		    y 		            = 0;
@@ -66958,8 +66958,6 @@ dialog dlgMain
 		width		= 290;
 		height		= 276;
 		enabled		= false;
-
-
 	}
 
    	staticbox stbTitle
