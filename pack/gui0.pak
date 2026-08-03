@@ -18457,7 +18457,7 @@ dialog dlgMain
 {
 	x	                = 0;
  	y 	                = 0;
-	width	            = 430;
+	width	            = 470;
 	height	            = 46;
 
     surface_file 	    = "Commercial.srf";
@@ -18467,7 +18467,7 @@ dialog dlgMain
 
     titlebar_x		    = 0;
 	titlebar_y		    = 0;
-	titlebar_width		= 430;
+	titlebar_width		= 470;
 	titlebar_height		= 46;
 
     //! 배경 백그라운드 이미지
@@ -66958,8 +66958,6 @@ dialog dlgMain
 		width		= 290;
 		height		= 276;
 		enabled		= false;
-
-
 	}
 
    	staticbox stbTitle
