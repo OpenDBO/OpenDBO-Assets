@@ -11755,7 +11755,7 @@ surface "srfNameBar"
 
 	button	btnHumanFighter
 	{
-		x		= 29;
+		x		= 57;
 		y		= 153;
 		width		= 50;
 		height		= 50;
@@ -11769,7 +11769,7 @@ surface "srfNameBar"
 
 	button	btnHumanMystic
 	{
-		x		= 88;
+		x		= 118;
 		y		= 153;
 		width		= 50;
 		height		= 50;
@@ -11780,7 +11780,7 @@ surface "srfNameBar"
 		surface_focus 	= "srfHumanMysticBtnFoc";
 		surface_disable = "srfHumanMysticBtnDis";
 	}
-	
+
 	button	btnHumanEngineer
 	{
 		x		= 147;
@@ -72149,6 +72149,19 @@ surface "OkDownButton"
 			surface_focus 	= "srfNormalBtnFoc";
 			surface_disable = "srfNormalBtnUp";
 		}
+
+		button VirtualKeyButton
+        {
+            x               = 0;
+            y               = 0;
+            width           = 53;
+            height          = 32;
+            surface_file 	= "Login.srf";
+			surface_up 	    = "srfVirtualKeyboardBtnUp";
+			surface_down 	= "srfVirtualKeyboardBtnDown";
+			surface_focus 	= "srfVirtualKeyboardBtnFocus";
+			surface_disable = "srfVirtualKeyboardBtnDisable";
+        }
 	}
 	
 	flash flaCredit
@@ -72170,10 +72183,33 @@ surface "OkDownButton"
 	file	= "pc_create.png";
 }
 
+resource "rsrLogin2"
+{
+	handle	= 0;
+	file	= "pc_create2.png";
+}
+
 resource "rsrLogin3"
 {
 	handle	= 0;
 	file	= "pc_create3.png";
+}
+
+resource "rsrLogin5"
+{
+	handle	= 0;
+	file	= "pc_create5.png";
+}
+
+resource "rsrLogin6"
+{
+	handle	= 0;
+	file	= "TW_login.PNG";
+}
+resource "rsrTitle"
+{
+	handle	= 0;
+	file	= "Web_Login_Title.png";
 }surface "srfTitle"
 {
 	resource_file	= "Login.rsr";
@@ -72197,7 +72233,6 @@ resource "rsrLogin3"
 	handle		= 0;
 	blend		= 0;
 }
-
 surface "srfInputDialogBack"
 {
 	resource_file   = "Login.rsr";	
@@ -72220,6 +72255,126 @@ surface "srfInputDialogBack"
 
 	handle		= 0;
 	blend		= 0;
+}
+
+surface "srfTWInputDialogBack"
+{
+	resource_file   = "Login.rsr";	
+	resource_name	= "rsrLogin6";
+
+	x		        = 0;
+	y		        = 0;
+	width		    = 320;
+	height		    = 128;
+	
+	color_red	    = 255;
+	color_green 	= 255;
+	color_blue	    = 255;
+	color_alpha 	= 255;
+
+	uv_left		    = 0;
+	uv_top		    = 0;
+	uv_right    	= 320;
+	uv_bottom   	= 128;
+
+	handle		    = 0;
+	blend		    = 0;
+}
+
+surface "srfVirtualKeyboardBtnUp"
+{
+	resource_file   = "Login.rsr";	
+	resource_name	= "rsrLogin6";
+
+	x		        = 0;
+	y		        = 0;
+	width		    = 53;
+	height		    = 32;
+	
+	color_red	    = 255;
+	color_green 	= 255;
+	color_blue	    = 255;
+	color_alpha 	= 255;
+
+	uv_left		    = 0;
+	uv_top		    = 336;
+	uv_right    	= 53;
+	uv_bottom   	= 368;
+
+	handle		    = 0;
+	blend		    = 0;
+}
+
+surface "srfVirtualKeyboardBtnFocus"
+{
+	resource_file   = "Login.rsr";	
+	resource_name	= "rsrLogin6";
+
+	x		        = 0;
+	y		        = 0;
+	width		    = 53;
+	height		    = 32;
+	
+	color_red	    = 255;
+	color_green 	= 255;
+	color_blue	    = 255;
+	color_alpha 	= 255;
+
+	uv_left		    = 54;
+	uv_top		    = 336;
+	uv_right    	= 107;
+	uv_bottom   	= 368;
+
+	handle		    = 0;
+	blend		    = 0;
+}
+
+surface "srfVirtualKeyboardBtnDown"
+{
+	resource_file   = "Login.rsr";	
+	resource_name	= "rsrLogin6";
+
+	x		        = 0;
+	y		        = 0;
+	width		    = 53;
+	height		    = 31;
+	
+	color_red	    = 255;
+	color_green 	= 255;
+	color_blue	    = 255;
+	color_alpha 	= 255;
+
+	uv_left		    = 108;
+	uv_top		    = 336;
+	uv_right    	= 161;
+	uv_bottom   	= 368;
+
+	handle		    = 0;
+	blend		    = 0;
+}
+
+surface "srfVirtualKeyboardBtnDisable"
+{
+	resource_file   = "Login.rsr";	
+	resource_name	= "rsrLogin6";
+
+	x		        = 0;
+	y		        = 0;
+	width		    = 53;
+	height		    = 31;
+	
+	color_red	    = 255;
+	color_green 	= 255;
+	color_blue	    = 255;
+	color_alpha 	= 255;
+
+	uv_left		    = 162;
+	uv_top		    = 336;
+	uv_right    	= 215;
+	uv_bottom   	= 368;
+
+	handle		    = 0;
+	blend		    = 0;
 }
 
 surface "srfNormalBtnUp"
@@ -72292,6 +72447,181 @@ surface "srfNormalBtnDown"
 
 	handle		= 0;
 	blend		= 0;
+}dialog dlgMain
+{
+	x	= 0;
+ 	y 	= 0;
+	width	= 1024;
+	height	= 768;
+
+	frame frmParent
+	{
+		x	= 0;
+	 	y 	= 0;
+		width	= 1024;
+		height	= 768;
+
+		flash	flaBackground
+		{
+			x 	= 0;
+			y 	= 0;
+			width	= 0;
+			height	= 0;
+			enabled	= false;
+			
+			filename = "Web_Login.swf";
+			autorewind = true;
+			initplay = true;
+			framecallback = false;
+			resizetype = exactfit;	
+		}
+
+		inputbox AccountInput
+		{
+			x 		= 490;
+			y 		= 598;
+			width 		= 95;
+			height 		= 22;
+
+			text_color_red	= 255;
+			text_color_green = 192;
+			text_color_blue	= 0;	
+
+			font_width	= 100;
+			font_height	= 90;
+
+			enabled		= true;
+				readonly	= false;
+		}
+
+		inputbox PasswardInput
+		{
+			x 		= 490;
+			y 		= 626;
+			width 		= 95;
+			height 		= 22;
+
+			text_color_red	= 255;
+			text_color_green = 192;
+			text_color_blue	= 0;	
+
+			font_width	= 100;
+			font_height	= 90;
+			enabled		= true;
+				readonly	= false;
+		}
+
+		button CinemaButton
+		{
+			x		= 37;
+			y		= 572;
+			width		= 147;
+			height		= 32;
+
+			surface_file 	= "Login.srf";
+			surface_up 	= "srfNormalBtnUp";
+			surface_down 	= "srfNormalBtnDown";
+			surface_focus 	= "srfNormalBtnFoc";
+			surface_disable = "srfNormalBtnUp";
+		}
+
+		button CreditButton
+		{
+			x		= 37;
+			y		= 612;
+			width		= 147;
+			height		= 32;
+
+			surface_file 	= "Login.srf";
+			surface_up 	= "srfNormalBtnUp";
+			surface_down 	= "srfNormalBtnDown";
+			surface_focus 	= "srfNormalBtnFoc";
+			surface_disable = "srfNormalBtnUp";
+		}
+		
+		button GamePolicyButton
+		{
+			x		= 37;
+			y		= 652;
+			width	= 147;
+			height	= 32;
+
+			surface_file 	= "Login.srf";
+			surface_up 		= "srfNormalBtnUp";
+			surface_down 	= "srfNormalBtnDown";
+			surface_focus 	= "srfNormalBtnFoc";
+			surface_disable = "srfNormalBtnUp";
+		}
+
+		button NewAccountButton
+		{
+			x		= 37;
+			y		= 700;
+			width	= 147;
+			height	= 32;
+
+			surface_file 	= "Login.srf";
+			surface_up 		= "srfNormalBtnUp";
+			surface_down 	= "srfNormalBtnDown";
+			surface_focus 	= "srfNormalBtnFoc";
+			surface_disable = "srfNormalBtnUp";
+		}
+
+		button LoginButton
+		{
+			x		= 443;
+			y		= 652;
+			width		= 147;
+			height		= 32;
+
+			surface_file 	= "Login.srf";
+			surface_up 	= "srfNormalBtnUp";
+			surface_down 	= "srfNormalBtnDown";
+			surface_focus 	= "srfNormalBtnFoc";
+			surface_disable = "srfNormalBtnUp";
+		}
+
+		button ExitButton
+		{
+			x		= 848;
+			y		= 652;
+			width		= 147;
+			height		= 32;
+
+			surface_file 	= "Login.srf";
+			surface_up 	= "srfNormalBtnUp";
+			surface_down 	= "srfNormalBtnDown";
+			surface_focus 	= "srfNormalBtnFoc";
+			surface_disable = "srfNormalBtnUp";
+		}
+
+		button VirtualKeyButton
+        {
+            x               = 0;
+            y               = 0;
+            width           = 53;
+            height          = 32;
+            surface_file 	= "Login.srf";
+			surface_up 	    = "srfVirtualKeyboardBtnUp";
+			surface_down 	= "srfVirtualKeyboardBtnDown";
+			surface_focus 	= "srfVirtualKeyboardBtnFocus";
+			surface_disable = "srfVirtualKeyboardBtnDisable";
+        }
+	}
+	
+	flash flaCredit
+	{
+		x 	= 0;
+		y 	= 0;
+		width	= 0;
+		height	= 0;
+		enabled	= false;
+		
+		autorewind = true;
+		initplay = false;
+		framecallback = false;
+		resizetype = exactfit;	
+	}
 }// --------------------------------------------------------------------------------------
 // Dialog Setting
 
@@ -182687,6 +183017,8 @@ surface "srfBattleCombatingFlicker"
 	handle		= 0;
 	blend		= 0;
 }
+// --------------------------------------------------------------------------------------
+// Dialog Setting
 dialog dlgMain
 {
 	x	= 100;
@@ -183017,7 +183349,7 @@ dialog dlgMain
 			text_color_green = 255;
 			text_color_blue = 255;
 			font_name 	= detail;
-		}		
+		}
 
 		staticbox sttEXP_Max
 		{
@@ -183032,7 +183364,7 @@ dialog dlgMain
 			text_color_green = 255;
 			text_color_blue = 255;
 			font_name 	= detail;
-		}		
+		}
 
 		staticbox sttNameTitle
 		{
@@ -183074,20 +183406,6 @@ dialog dlgMain
 			text_color_red	= 255;
 			text_color_green = 209;
 			text_color_blue = 68;
-		}
-		
-		staticbox sttCharActiveTitle
-		{
-			x	= 212;
-		 	y 	= 45;
-			width	= 135;
-			height	= 17;
-//			enabled = false;
-
-			text_style	= left;
-			text_color_red	= 255;
-			text_color_green = 255;
-			text_color_blue = 255;
 		}
 
 		staticbox sttLevelTitle
@@ -183584,6 +183902,114 @@ dialog dlgMain
 			font_name 	= detail;
 		}	
 
+		staticbox sttStomachacheDefenceTitle
+		{
+			x	= 21;
+		 	y 	= 399;
+			width	= 77;
+			height	= 17;
+
+			text_style	= right;
+			text_color_red	= 255;
+			text_color_green = 255;
+			text_color_blue = 255;
+		}
+
+		staticbox sttStomachacheDefence
+		{
+			x	= 106;
+		 	y 	= 399;
+			width	= 44;
+			height	= 17;
+
+			text_style	= left;
+			text_color_red	= 255;
+			text_color_green = 255;
+			text_color_blue = 255;
+			font_name 	= detail;
+		}
+
+		staticbox sttPoisonDefenceTitle
+		{
+			x	= 21;
+		 	y 	= 415;
+			width	= 77;
+			height	= 17;
+
+			text_style	= right;
+			text_color_red	= 255;
+			text_color_green = 255;
+			text_color_blue = 255;
+		}
+
+		staticbox sttPoisonDefence
+		{
+			x	= 106;
+		 	y 	= 415;
+			width	= 44;
+			height	= 17;
+
+			text_style	= left;
+			text_color_red	= 255;
+			text_color_green = 255;
+			text_color_blue = 255;
+			font_name 	= detail;
+		}
+
+		staticbox sttBleedDefenceTitle
+		{
+			x	= 138;
+		 	y 	= 399;
+			width	= 77;
+			height	= 17;
+
+			text_style	= right;
+			text_color_red	= 255;
+			text_color_green = 255;
+			text_color_blue = 255;
+		}
+
+		staticbox sttBleedDefence
+		{
+			x	= 226;
+		 	y 	= 399;
+			width	= 44;
+			height	= 17;
+
+			text_style	= left;
+			text_color_red	= 255;
+			text_color_green = 255;
+			text_color_blue = 255;
+			font_name 	= detail;
+		}
+
+		staticbox sttBurnDefenceTitle
+		{
+			x	= 138;
+		 	y 	= 415;
+			width	= 77;
+			height	= 17;
+
+			text_style	= right;
+			text_color_red	= 255;
+			text_color_green = 255;
+			text_color_blue = 255;
+		}
+
+		staticbox sttBurnDefence
+		{
+			x	= 226;
+		 	y 	= 415;
+			width	= 44;
+			height	= 17;
+
+			text_style	= left;
+			text_color_red	= 255;
+			text_color_green = 255;
+			text_color_blue = 255;
+			font_name 	= detail;
+		}				
+
 		staticbox sttAttrTitle
 		{
 			x	= 255;
@@ -183598,23 +184024,21 @@ dialog dlgMain
 			text_color_blue = 68;
 		}
 
-		panel pnlDefenceAttr
+		panel pnlOffenceAttr
 		{
 			x	= 300;
 			y	= 96;
 			width	= 17;
 			height	= 17;
-		}	
+		}		
 
-		panel pnlOffenceAttr
+		panel pnlDefenceAttr
 		{
-			x	= 320;
+			x	= 321;
 			y	= 96;
 			width	= 17;
 			height	= 17;
 		}	
-
-			
 
 		button btnRightSpin
 		{
@@ -183643,21 +184067,139 @@ dialog dlgMain
 			surface_focus 	= "srfRightSpinFoc";
 			surface_disable = "srfRightSpinDown";
 		}
-		
-		button btnCharTitle
+
+		panel stdbLimitShame
 		{
-			x		= 21;
-		 	y 		= 403;
-			width	= 89;
-			height	= 25;
+			x	= 18;
+		 	y 	= 311;
+			width	= 180;
+			height	= 18;
 
-			surface_file	= "StatusWnd.srf";
-			surface_up 		= "srfCharTitleButtonUp";
-			surface_down 	= "srfCharTitleButtonDown";
-			surface_focus 	= "srfCharTitleButtonFoc";
-			surface_disable = "srfCharTitleButtonUp";
+			surface_file 	= "StatusWnd.srf";
+			surface		= "srfLimitShameEmptyBg";
+
+			staticbox sttLimitShameText
+			{
+				x	= 20;
+			 	y 	= 1;
+				width	= 30;
+				height	= 17;
+				enabled = false;
+
+				text_style	= center;
+				text_color_red	= 255;
+				text_color_green = 255;
+				text_color_blue = 255;
+			}	
+			staticbox sttLimitShameCurrentText
+			{
+				x	= 50;
+			 	y 	= 1;
+				width	= 30;
+				height	= 17;
+				enabled = false;
+
+				text_style	= right;
+				text_color_red	= 255;
+				text_color_green = 255;
+				text_color_blue = 255;
+				font_name 	= detail;
+			}
+			staticbox sttLimitShametaste
+			{
+				x	= 80;
+			 	y 	= 1;
+				width	= 10;
+				height	= 17;
+				enabled = false;
+
+				text_style	= center;
+				text_color_red	= 255;
+				text_color_green = 255;
+				text_color_blue = 255;
+			}
+			staticbox sttLimitShameMaxText
+			{
+				x	= 90;
+			 	y 	= 1;
+				width	= 30;
+				height	= 17;
+				enabled = false;
+
+				text_style	= left;
+				text_color_red	= 255;
+				text_color_green = 255;
+				text_color_blue = 255;
+				font_name 	= detail;
+			}
+			staticbox sttLimitShameRate
+			{
+				x	= 120;
+			 	y 	= 1;
+				width	= 50;
+				height	= 17;
+				enabled = false;
+
+				text_style	= left;
+				text_color_red	= 255;
+				text_color_green = 255;
+				text_color_blue = 255;
+				font_name 	= detail;
+			}
+		}		
+
+		combobox cbbCharTitleCombo
+		{
+			x	= 212;
+		 	y 	= 44;
+			width	= 135;
+			height	= 20;
+
+			text_style	 = center;
+			text_color_red	 = 255;
+			text_color_green = 255;
+			text_color_blue  = 255;
+			font_attribute	 = 0;
+			font_name = detail;
+
+			surface_file		= "StatusWnd.srf";
+			surface				= "srfcbbStatic";
+			list_surface		= "srfComboBoxLT";
+			list_height			= 200;
+			
+			combo_button_width	= 18;
+			combo_button_height	= 18;
+
+			surface_up	= "srfBtnCbbTitleUp";
+			surface_down	= "srfBtnCbbTitleDown";
+			surface_disable	= "srfBtnCbbTitleDisable";
+			surface_focus	= "srfBtnCbbTitleFocus";
+
+			list_text_style		= center;
+			text_selcolor_red	= 255;
+			text_selcolor_green	= 0;
+			text_selcolor_blue	= 0;
+ 
+			mask_color_red		= 255;
+			mask_color_green	= 255;
+			mask_color_blue		= 255;
+			mask_alpha		= 255;
+
+			masksurface		= "strChartitleMask";
+
+			margin_x			= 0;
+			margin_y			= 0;
+			visiblecount		= 10;
+
+			slider_width		= 13;
+			slider_height		= 26;
+			
+			scroll_button_width		= 0;
+			scroll_button_height	= 0;
+
+			slider_surface			= "srfcbbScrollSlider3";
+			layout_surface			= "srfScrollLayout";
 		}
-
 	}
 	
 	dialog dlgHonor
@@ -184158,82 +184700,7 @@ dialog dlgMain
 			}
 		}
    	}
-	
-	dialog dlgStats
-	{
-		x	= 0;
- 		y 	= 20;
-		width	= 364;
-		height	= 460;
-		
-		outputbox outputDisplayStatsName
-		{
-			x		= 15;
-			y		= 35;
-			width		= 290;
-			height		= 330;
-
-			margin_x	= 0;
-			margin_y	= 0;
-
-			scrollbar_dynamicshow	= false;
-			scrollbar_width		= 12;
-			slider_width		= 12;
-			slider_height		= 26;
-			button_width		= 12;
-			button_height		= 19;
-			vertical_scroll		= true;
-			scrollbar_leftline	= false;
-			scrollbar_margin_top	= 15;
-
-			surface_file 			= "GameCommon.srf";	
-			increase_surface_up		= "srfScrollNextBtnUp";
-			increase_surface_down		= "srfScrollNextBtnDown";
-			increase_surface_focus		= "srfScrollNextBtnFoc";
-			increase_surface_disable	= "srfScrollNextBtnDown";
-			decrease_surface_up		= "srfScrollPrevBtnUp";
-			decrease_surface_down		= "srfScrollPrevBtnDown";
-			decrease_surface_focus		= "srfScrollPrevBtnFoc";
-			decrease_surface_disable	= "srfScrollPrevBtnDown";
-			slider_surface			= "srfScrollSmall";
-			layout_surface			= "srfScrollLayout";
-		}
-		
-		outputbox outputDisplayStatsValue
-		{
-			x		= 250;
-			y		= 35;
-			width		= 95;
-			height		= 330;
-
-			margin_x	= 0;
-			margin_y	= 0;
-
-			scrollbar_dynamicshow	= false;
-			scrollbar_width		= 12;
-			slider_width		= 12;
-			slider_height		= 26;
-			button_width		= 12;
-			button_height		= 19;
-			vertical_scroll		= true;
-			scrollbar_leftline	= false;
-			scrollbar_margin_top	= 40;
-
-			surface_file 			= "GameCommon.srf";	
-			increase_surface_up		= "srfScrollNextBtnUp";
-			increase_surface_down		= "srfScrollNextBtnDown";
-			increase_surface_focus		= "srfScrollNextBtnFoc";
-			increase_surface_disable	= "srfScrollNextBtnDown";
-			decrease_surface_up		= "srfScrollPrevBtnUp";
-			decrease_surface_down		= "srfScrollPrevBtnDown";
-			decrease_surface_focus		= "srfScrollPrevBtnFoc";
-			decrease_surface_disable	= "srfScrollPrevBtnDown";
-			slider_surface			= "srfScrollSmall";
-			layout_surface			= "srfScrollLayout";
-		}
-		
-	}
-	
+      
     button btnClose
     {
      	x		= 343;
@@ -184254,7 +184721,7 @@ dialog dlgMain
 		y		= 29;
 		width		= 328;
 		height		= 22;
-		initindex	= 0;	
+		initindex		= 0;	
 
 		surface_file 		= "GameCommon.srf";
 		surface_left 		= "srfTabLeft";
@@ -185495,7 +185962,7 @@ surface "srfComboBoxLT"
 {
 	//resource_file	= "DWC.rsr";
 	//resource_name	= "rsrDWC1";
-	
+
 	resource_file	= "Game.rsr";
 	resource_name	= "rsrOption";
 
@@ -185509,7 +185976,7 @@ surface "srfComboBoxLT"
 	color_red	= 255;
 	color_green	= 255;
 	color_blue	= 255;
-	color_alpha	= 255;
+	color_alpha	= 204;
 
 	uv_left		= 0;
 	uv_top		= 0;
@@ -195566,6 +196033,290 @@ surface "srfFuelGaugeBack"
 
 	handle		= 0;
 	blend		= 0;
+}dialog dlgMain
+{
+	x	    = 0;
+ 	y 	    = 0;
+	width	= 320;
+	height	= 160;
+
+	surface_file		= "VirtualKeyboard.srf";
+	surface			= "srfVirtualDialogBack";
+
+	frame frmParent
+	{
+		x	    = 0;
+	 	y 	    = 0;
+		width	= 320;
+		height	= 160;
+		
+		button CapsLockButton
+		{
+			x               = 244;
+			y               = 29;
+			width           = 65;
+			height          = 23;
+			surface_file 	= "VirtualKeyboard.srf";
+			surface_up 	    = "srfActiveBtnUp";
+			surface_down 	= "srfActiveBtnDown";
+			surface_focus 	= "srfActiveBtnFocus";
+			surface_disable = "srfActiveBtnDisable";
+		}
+		button BackSpaceButton
+		{
+			x               = 244;
+			y               = 52;
+			width           = 65;
+			height          = 23;
+			surface_file 	= "VirtualKeyboard.srf";
+			surface_up 	    = "srfActiveBtnUp";
+			surface_down 	= "srfActiveBtnDown";
+			surface_focus 	= "srfActiveBtnFocus";
+			surface_disable = "srfActiveBtnDisable";
+		}
+		button AllDeleteButton
+		{
+			x               = 244;
+			y               = 75;
+			width           = 65;
+			height          = 23;
+			surface_file 	= "VirtualKeyboard.srf";
+			surface_up 	    = "srfActiveBtnUp";
+			surface_down 	= "srfActiveBtnDown";
+			surface_focus 	= "srfActiveBtnFocus";
+			surface_disable = "srfActiveBtnDisable";
+		}
+		button CloseButton
+		{
+			x               = 244;
+			y               = 121;
+			width           = 65;
+			height          = 22;
+			surface_file 	= "VirtualKeyboard.srf";
+			surface_up 	    = "srfActiveBtnUp";
+			surface_down 	= "srfActiveBtnDown";
+			surface_focus 	= "srfActiveBtnFocus";
+			surface_disable = "srfActiveBtnDisable";
+		}
+	}	
+}resource "rsrVirtualKeyboard"
+{
+	handle	= 0;
+	file	= "TW_login.PNG";
+}surface "srfVirtualDialogBack"
+{
+	resource_file   = "VirtualKeyboard.rsr";	
+	resource_name	= "rsrVirtualKeyboard";
+
+	x		        = 0;
+	y		        = 0;
+	width		    = 320;
+	height		    = 160;
+	
+	color_red	    = 255;
+	color_green 	= 255;
+	color_blue	    = 255;
+	color_alpha 	= 255;
+
+	uv_left		    = 0;
+	uv_top		    = 129;
+	uv_right    	= 320;
+	uv_bottom   	= 289;
+
+	handle		    = 0;
+	blend		    = 0;
+}
+
+surface "srfVirtualKeyBtnUp"
+{
+	resource_file   = "VirtualKeyboard.rsr";	
+	resource_name	= "rsrVirtualKeyboard";
+
+	x		        = 0;
+	y		        = 0;
+	width		    = 22;
+	height		    = 22;
+	
+	color_red	    = 255;
+	color_green 	= 255;
+	color_blue	    = 255;
+	color_alpha 	= 255;
+
+	uv_left		    = 23;
+	uv_top		    = 313;
+	uv_right    	= 45;
+	uv_bottom   	= 335;
+
+	handle		    = 0;
+	blend		    = 0;
+}
+
+surface "srfVirtualKeyBtnDown"
+{
+	resource_file   = "VirtualKeyboard.rsr";	
+	resource_name	= "rsrVirtualKeyboard";
+
+	x		        = 0;
+	y		        = 0;
+	width		    = 22;
+	height		    = 22;
+	
+	color_red	    = 255;
+	color_green 	= 255;
+	color_blue	    = 255;
+	color_alpha 	= 255;
+
+	uv_left		    = 46;
+	uv_top		    = 313;
+	uv_right    	= 68;
+	uv_bottom   	= 335;
+
+	handle		    = 0;
+	blend		    = 0;
+}
+
+surface "srfVirtualKeyBtnDis"
+{
+	resource_file   = "VirtualKeyboard.rsr";	
+	resource_name	= "rsrVirtualKeyboard";
+
+	x		        = 0;
+	y		        = 0;
+	width		    = 22;
+	height		    = 22;
+	
+	color_red	    = 255;
+	color_green 	= 255;
+	color_blue	    = 255;
+	color_alpha 	= 255;
+
+	uv_left		    = 0;
+	uv_top		    = 313;
+	uv_right    	= 22;
+	uv_bottom   	= 335;
+
+	handle		    = 0;
+	blend		    = 0;
+}
+
+surface "srfVirtualKeyBtnFoc"
+{
+	resource_file   = "VirtualKeyboard.rsr";	
+	resource_name	= "rsrVirtualKeyboard";
+
+	x		        = 0;
+	y		        = 0;
+	width		    = 22;
+	height		    = 22;
+	
+	color_red	    = 255;
+	color_green 	= 255;
+	color_blue	    = 255;
+	color_alpha 	= 255;
+
+	uv_left		    = 69;
+	uv_top		    = 313;
+	uv_right    	= 91;
+	uv_bottom   	= 335;
+
+	handle		    = 0;
+	blend		    = 0;
+}
+
+surface "srfActiveBtnUp"
+{
+	resource_file   = "VirtualKeyboard.rsr";	
+	resource_name	= "rsrVirtualKeyboard";
+
+	x		        = 0;
+	y		        = 0;
+	width		    = 65;
+	height		    = 22;
+	
+	color_red	    = 255;
+	color_green 	= 255;
+	color_blue	    = 255;
+	color_alpha 	= 255;
+
+	uv_left		    = 66;
+	uv_top		    = 290;
+	uv_right    	= 131;
+	uv_bottom   	= 312;
+
+	handle		    = 0;
+	blend		    = 0;
+}
+
+surface "srfActiveBtnDown"
+{
+	resource_file   = "VirtualKeyboard.rsr";	
+	resource_name	= "rsrVirtualKeyboard";
+
+	x		        = 0;
+	y		        = 0;
+	width		    = 65;
+	height		    = 22;
+	
+	color_red	    = 255;
+	color_green 	= 255;
+	color_blue	    = 255;
+	color_alpha 	= 255;
+
+	uv_left		    = 132;
+	uv_top		    = 290;
+	uv_right    	= 197;
+	uv_bottom   	= 312;
+
+	handle		    = 0;
+	blend		    = 0;
+}
+
+surface "srfActiveBtnFocus"
+{
+	resource_file   = "VirtualKeyboard.rsr";	
+	resource_name	= "rsrVirtualKeyboard";
+
+	x		        = 0;
+	y		        = 0;
+	width		    = 65;
+	height		    = 22;
+	
+	color_red	    = 255;
+	color_green 	= 255;
+	color_blue	    = 255;
+	color_alpha 	= 255;
+
+	uv_left		    = 198;
+	uv_top		    = 290;
+	uv_right    	= 263;
+	uv_bottom   	= 312;
+
+	handle		    = 0;
+	blend		    = 0;
+}
+
+surface "srfActiveBtnDisable"
+{
+	resource_file   = "VirtualKeyboard.rsr";	
+	resource_name	= "rsrVirtualKeyboard";
+
+	x		        = 0;
+	y		        = 0;
+	width		    = 65;
+	height		    = 22;
+	
+	color_red	    = 255;
+	color_green 	= 255;
+	color_blue	    = 255;
+	color_alpha 	= 255;
+
+	uv_left		    = 0;
+	uv_top		    = 290;
+	uv_right    	= 65;
+	uv_bottom   	= 312;
+
+	handle		    = 0;
+	blend		    = 0;
 }dialog dlgMain
 {
 	x	= 0;
