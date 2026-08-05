@@ -90837,12 +90837,12 @@ dialog dlgMain
 			text_color_blue  = 29;
 			font_attribute	 = 0;
 
-			surface_file		= "OptionWnd.srf";
-			surface				= "srfcbbStatic";
-			list_surface		= "srfcbbListbox3";
-			list_height			= 71;
-			combo_button_width	= 19;
-			combo_button_height	= 18;
+				surface_file		= "OptionWnd.srf";
+				surface				= "srfcbbStatic";
+				list_surface		= "srfcbbListbox5";
+				list_height			= 117;
+				combo_button_width	= 19;
+				combo_button_height	= 18;
 
 			surface_up	= "srfcbbButtonUp";
 			surface_down	= "srfcbbButtonDown";
@@ -91862,7 +91862,7 @@ dialog dlgMain
 			x		= 0;
 			y		= 0;
 			width	= 288;
-			height	= 652;
+			height	= 700;
 			
 			clipping = true;
 			
@@ -92005,9 +92005,9 @@ dialog dlgMain
 			
 			staticbox stbFpsTitle
 			{
-				x		= 9;
+				x		= 26;
 				y		= 75;
-				width	= 150;
+				width	= 100;
 				height	= 20;
 				
 				text_style	    = left;
@@ -92051,10 +92051,106 @@ dialog dlgMain
 				clipping = true;
 			}
 			
+			button chkUnlimitedFps
+			{
+				x			= 9;
+				y			= 79;
+				width		= 13;
+				height		= 12;
+
+				togglemode	= true;
+
+				text_downcoord_x= "0";
+				text_downcoord_y= "0";
+
+				surface_file 	= "OptionWnd.srf";
+				surface_up 		= "srfSmallCheckBoxOff";
+				surface_down 	= "srfSmallCheckBoxOn";
+				surface_focus 	= "srfSmallCheckBoxOff";
+				surface_disable = "srfSmallCheckBoxOn";
+				
+				font_name = detail;
+				
+				clipping = true;
+				
+			}
+			
+			staticbox stbSSAATitle
+			{
+				x		= 9;
+				y		= 95;
+				width	= 150;
+				height	= 20;
+				
+				text_style	    = left;
+	    		text_color_red	= 255;
+	    		text_color_green= 255;
+	    		text_color_blue	= 255;
+	    		font_attribute	= 0;
+	    		font_height	= 90;
+	    		font_name = detail;
+	    		
+	    		clipping = true;
+	    	
+			}
+			
+			combobox cbbSSAA
+			{
+				x	= 129;
+			 	y 	= 95;
+				width	= 135;
+				height	= 21;
+	
+				text_style	 = center;
+				text_color_red	 = 255;
+				text_color_green = 189;
+				text_color_blue  = 29;
+				font_attribute	 = 0;
+	
+				surface_file		= "OptionWnd.srf";
+				surface				= "srfcbbStatic";
+				list_surface		= "srfcbbListbox5";
+				list_height			= 117;
+				combo_button_width	= 19;
+				combo_button_height	= 18;
+	
+				surface_up		= "srfcbbButtonUp";
+				surface_down	= "srfcbbButtonDown";
+				surface_disable	= "srfcbbButtonDisable";
+				surface_focus	= "srfcbbButtonFocus";
+	
+				list_text_style		= center;
+				text_selcolor_red	= 255;
+				text_selcolor_green	= 0;
+				text_selcolor_blue	= 0;
+	 
+				mask_color_red		= 255;
+				mask_color_green	= 255;
+				mask_color_blue		= 255;
+				mask_alpha			= 255;
+	
+				masksurface			= "srfcbbListboxMask";
+	
+				margin_x			= 0;
+				margin_y			= 0;
+				visiblecount		= 5;
+	
+				slider_width		= 13;
+				slider_height		= 39;
+				
+				scroll_button_width		= 0;
+				scroll_button_height	= 0;
+				
+				slider_surface			= "srfcbbScrollSlider5";
+				layout_surface			= "srfScrollLayout";
+				
+				clipping = true;
+			}
+			
 			button btnWindowMode
 			{
 				x			= 9;
-				y			= 98;
+				y = 124;
 				width		= 150;
 				height		= 12;
 
@@ -92080,7 +92176,7 @@ dialog dlgMain
 			staticbox stbEffectTitle
 			{
 				x		= 2;
-				y		= 117;
+				y = 139;
 				width	= 150;
 				height	= 20;
 				
@@ -92098,7 +92194,7 @@ dialog dlgMain
 			staticbox stbGrahpicQualityText
 			{
 				x		= 9;
-				y		= 137;
+				y = 159;
 				width	= 150;
 				height	= 20;
 				
@@ -92117,7 +92213,7 @@ dialog dlgMain
 			staticbox stbGrahpicQualityLow
 			{
 				x		= 9;
-				y		= 164;
+				y = 186;
 				width	= 60;
 				height	= 20;
 				
@@ -92136,7 +92232,7 @@ dialog dlgMain
 			staticbox stbGrahpicQualityMiddle
 			{
 				x		= 63;
-				y		= 164;
+				y = 186;
 				width	= 60;
 				height	= 20;
 				
@@ -92155,7 +92251,7 @@ dialog dlgMain
 			staticbox stbGrahpicQualityHigh
 			{
 				x		= 138;
-				y		= 164;
+				y = 186;
 				width	= 60;
 				height	= 20;
 				
@@ -92174,7 +92270,7 @@ dialog dlgMain
 			staticbox stbGrahpicQualityUser
 			{
 				x		= 161;
-				y		= 164;
+				y = 186;
 				width	= 100;
 				height	= 20;
 				
@@ -92193,7 +92289,7 @@ dialog dlgMain
 			scrollbar scbGraphicQuality
 			{
 				x			= 9;
-				y			= 188;
+				y = 210;
 				width		= 252;
 				height		= 9;
 				
@@ -92226,7 +92322,7 @@ dialog dlgMain
 			staticbox stbTerrainDist
 			{
 				x		= 9;
-				y		= 220;
+				y = 242;
 				width	= 150;
 				height	= 20;
 				
@@ -92245,7 +92341,7 @@ dialog dlgMain
 			scrollbar scbTerrainDist
 			{
 				x			= 129;
-				y			= 220;
+				y = 242;
 				width		= 135;
 				height		= 20;
 				
@@ -92274,7 +92370,7 @@ dialog dlgMain
 			staticbox stbObjectDist
 			{
 				x		= 9;
-				y		= 250;
+				y = 272;
 				width	= 150;
 				height	= 20;
 				
@@ -92293,7 +92389,7 @@ dialog dlgMain
 			scrollbar scbObjectDist
 			{
 				x			= 129;
-				y			= 250;
+				y = 272;
 				width		= 135;
 				height		= 20;
 				
@@ -92322,7 +92418,7 @@ dialog dlgMain
 			button btnTerrainShadow
 			{
 				x			= 9;
-				y			= 280;
+				y = 306;
 				width		= 150;
 				height		= 12;
 
@@ -92348,7 +92444,7 @@ dialog dlgMain
 			button btnWaterEffect
 			{
 				x			= 9;
-				y			= 310;
+				y = 336;
 				width		= 150;
 				height		= 12;
 
@@ -92422,7 +92518,7 @@ dialog dlgMain
 			button btnCharacterShadow
 			{
 				x			= 9;
-				y			= 370;
+				y = 396;
 				width		= 150;
 				height		= 12;
 
@@ -92446,7 +92542,7 @@ dialog dlgMain
 			staticbox stbMagicEffect
 			{
 				x		= 9;
-				y		= 400;
+				y = 422;
 				width	= 150;
 				height	= 20;
 				
@@ -92465,7 +92561,7 @@ dialog dlgMain
 			scrollbar scbMagicEffect
 			{
 				x			= 129;
-				y			= 400;
+				y = 422;
 				width		= 135;
 				height		= 20;
 				
@@ -92494,7 +92590,7 @@ dialog dlgMain
 			staticbox stbWeatherEffect
 			{
 				x		= 9;
-				y		= 430;
+				y = 452;
 				width	= 150;
 				height	= 20;
 				
@@ -92513,7 +92609,7 @@ dialog dlgMain
 			scrollbar scbWeatherEffect
 			{
 				x			= 129;
-				y			= 430;
+				y = 452;
 				width		= 135;
 				height		= 20;
 				
@@ -92542,7 +92638,7 @@ dialog dlgMain
 			staticbox stbTextureQuality
 			{
 				x		= 9;
-				y		= 460;
+				y = 482;
 				width	= 150;
 				height	= 20;
 				
@@ -92561,7 +92657,7 @@ dialog dlgMain
 			scrollbar scbTextureQuality
 			{
 				x			= 129;
-				y			= 460;
+				y = 482;
 				width		= 135;
 				height		= 20;
 				
@@ -92590,7 +92686,7 @@ dialog dlgMain
 			staticbox stbCharacterEffectTitle
 			{
 				x		= 2;
-				y		= 510;
+				y = 532;
 				width	= 150;
 				height	= 20;
 				
@@ -92608,7 +92704,7 @@ dialog dlgMain
 			button btnCartoonEdge
 			{
 				x			= 9;
-				y			= 540;
+				y = 566;
 				width		= 150;
 				height		= 12;
 
@@ -92660,7 +92756,7 @@ dialog dlgMain
 			staticbox stbEtcTitle
 			{
 				x		= 2;
-				y		= 610;
+				y = 632;
 				width	= 150;
 				height	= 20;
 				
@@ -92678,7 +92774,7 @@ dialog dlgMain
 			button btnHdrEffect
 			{
 				x			= 9;
-				y			= 640;
+				y = 666;
 				width		= 150;
 				height		= 12;
 
