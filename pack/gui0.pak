@@ -52576,58 +52576,215 @@ surface "srfCommonBtnDis"
 
 	handle		= 0;
 	blend		= 0;
-}staticbox StaticUsePoint
+}// --------------------------------------------------------------------------------------
+// Dialog Setting
+
+dialog dlgMain
 {
-	x	= 195;
- 	y 	= 443;
-	width	= 82;
-	height	= 20;
+	x	= 200;
+ 	y 	= 100;
+	width	= 320;
+	height	= 480;
 
-	font_name       	= Default;
+	titlebar_x		= 0;
+	titlebar_y		= 0;
+	titlebar_width		= 277;
+	titlebar_height		= 20;
 
-	//font_height		= 100;
-	text_style		= right;
-	text_color_red		= 255;
-	text_color_green	= 255;
-	text_color_blue		= 255;
+	surface_file = "GiftShopGui.srf";
+	surface	     = "srfDialog";
 
-	surface_file        	= "CommonShopGui.srf";
-	surface	            	= "MoneyBackPanel";
+	button	ExitButton
+	{
+		x		= 300;
+		y		= 4;
+		width		= 16;
+		height		= 16;
+
+		surface_file 	= "GameCommon.srf";
+		surface_up 	= "srfClose2BtnUp";
+		surface_down 	= "srfClose2BtnDown";
+		surface_focus 	= "srfClose2BtnFoc";
+		surface_disable	= "srfClose2BtnDis";
+	}
+
+	tabbutton TabButton
+	{
+		x 	= 20;
+		y 	= 30;
+		width	= 279;
+		height	= 22;
+
+		surface_file 	= "GiftShopGui.srf";
+		initindex	= 0;
+
+		surface_left	= srfTabLeft;
+		surface_center	= srfTabCenter;
+		surface_right	= srfTabRight;
+
+		surface_sel_left	= srfTabSelLeft;
+		surface_sel_center	= srfTabSelCenter;
+		surface_sel_right	= srfTabSelRight;
+
+		surface_foc_left	= srfTabFocLeft;
+		surface_foc_center	= srfTabFocCenter;
+		surface_foc_right	= srfTabFocRight;
+
+		surface_line		= srfTabLine;
+
+		tabtext_margin_x	= 8;
+		tabtext_margin_y	= 3;
+		tab_unsel_width		= 69;
+	}
+
+	panel ItemPanel0
+	{
+		x	= 20;
+	 	y 	= 62;
+		width	= 283;
+		height	= 47;
+
+		surface_file 	= "GiftShopGui.srf";
+		surface		= "ItemPanel";
+	}
+
+	panel ItemPanel1
+	{
+		x	= 20;
+	 	y 	= 116;
+		width	= 283;
+		height	= 47;
+
+		surface_file 	= "GiftShopGui.srf";
+		surface		= "ItemPanel";
+	}
+
+	panel ItemPanel2
+	{
+		x	= 20;
+	 	y 	= 170;
+		width	= 283;
+		height	= 47;
+
+		surface_file 	= "GiftShopGui.srf";
+		surface		= "ItemPanel";
+	}
+
+	panel ItemPanel3
+	{
+		x	= 20;
+	 	y 	= 224;
+		width	= 283;
+		height	= 47;
+
+		surface_file 	= "GiftShopGui.srf";
+		surface		= "ItemPanel";
+	}
+
+	panel ItemPanel4
+	{
+		x	= 20;
+	 	y 	= 278;
+		width	= 283;
+		height	= 47;
+
+		surface_file 	= "GiftShopGui.srf";
+		surface		= "ItemPanel";
+	}
+
+	panel ItemPanel5
+	{
+		x	= 20;
+	 	y 	= 332;
+		width	= 283;
+		height	= 47;
+
+		surface_file 	= "GiftShopGui.srf";
+		surface		= "ItemPanel";
+	}
+
+	button PrePageButton
+	{
+		x	= 168;
+	 	y 	= 406;
+		width	= 33;
+		height	= 21;
+
+		surface_file 	= "GiftShopGui.srf";
+		surface_up   	= "srfPrePageButton";
+		surface_focus  	= "srfPrePageButtonFocus";
+		surface_down   	= "srfPrePageButtonDown";
+		surface_disable	= "srfPrePageButtonDis";
+	}
+
+	button NextPageButton
+	{
+		x	= 277;
+	 	y 	= 406;
+		width	= 33;
+		height	= 21;
+
+		surface_file 	= "GiftShopGui.srf";
+		surface_up   	= "srfNextPageButton";
+		surface_focus  	= "srfNextPageButtonFocus";
+		surface_down   	= "srfNextPageButtonDown";
+		surface_disable	= "srfNextPageButtonDis";
+	}
+
+	staticbox StaticUsePoint
+	{
+		x	= 195;
+	 	y 	= 443;
+		width	= 82;
+		height	= 20;
+
+		font_name       	= Default;
+
+		//font_height		= 100;
+		text_style		= right;
+		text_color_red		= 255;
+		text_color_green	= 255;
+		text_color_blue		= 255;
+
+		surface_file        	= "GiftShopGui.srf";
+		surface	            	= "MoneyBackPanel";
+	}
+
+	staticbox StaticICon
+	{
+		x	= 278;
+	 	y 	= 445;
+		width	= 17;
+		height	= 15;
+
+		font_name       	= Default;
+		enabled         	= false;
+
+		//font_height		= 100;
+		text_style		= right;
+		text_color_red		= 255;
+		text_color_green	= 255;
+		text_color_blue		= 255;
+
+		surface_file        	= "GiftShopGui.srf";
+		surface	            	= "WPIcon";
+	}
+
+	button BtnHoipoiMixOpen
+	{
+		x			= 27;
+		y			= 414;
+		width 			= 36;
+		height 			= 36;
+
+		surface_file 		= "GiftShopGui.srf";
+		surface_up	 	= "srfHoipoiBtnUp";
+		surface_focus 		= "srfHoipoiBtnFocus";
+		surface_down		= "srfHoipoiBtnDown";
+		surface_disable		= "srfHoipoiBtnDisable";
+	}
 }
-
-staticbox StaticICon
-{
-	x	= 278;
- 	y 	= 445;
-	width	= 17;
-	height	= 15;
-
-	font_name       	= Default;
-	enabled         	= false;
-
-	//font_height		= 100;
-	text_style		= right;
-	text_color_red		= 255;
-	text_color_green	= 255;
-	text_color_blue		= 255;
-
-	surface_file        	= "GiftShopGui.srf";
-	surface	            	= "WPIcon";
-}
-
-button BtnHoipoiMixOpen
-{
-	x			= 27;
-	y			= 414;
-	width 			= 36;
-	height 			= 36;
-	
-	surface_file 		= "GiftShopGui.srf";
-	surface_up	 	= "srfHoipoiBtnUp";
-	surface_focus 		= "srfHoipoiBtnFocus";
-	surface_down		= "srfHoipoiBtnDown";
-	surface_disable		= "srfHoipoiBtnDisable";
-}resource "rsrGiftShop"
+resource "rsrGiftShop"
 {
 	handle	= 0;
 	file	= "wnd_gift_shop.png";
@@ -52638,6 +52795,588 @@ resource "rsrGiftShopSideIcon"
 	handle	= 0;
 	file	= "racecommon3.png";
 }
+
+resource "rsrGiftShopCommonChrome"
+{
+	handle	= 0;
+	file	= "wnd_netpy_shop1.png";
+}
+surface "srfDialogBackUp"
+{
+	resource_file	= "Game.rsr";
+	resource_name	= "rsrRaceCommon2";
+
+	x		= 0;
+	y		= 0;
+	width		= 282;
+	height		= 24;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 230;
+	uv_top		= 0;
+	uv_right	= 512;
+	uv_bottom	= 24;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfDialogBackCenter"
+{
+	resource_file	= "Game.rsr";
+	resource_name	= "rsrRaceCommon2";
+
+	x		= 0;
+	y		= 0;
+	width		= 282;
+	height		= 3;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 230;
+	uv_top		= 28;
+	uv_right	= 512;
+	uv_bottom	= 31;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfDialogBackDown"
+{
+	resource_file	= "Game.rsr";
+	resource_name	= "rsrRaceCommon2";
+
+	x		= 0;
+	y		= 0;
+	width		= 282;
+	height		= 34;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 230;
+	uv_top		= 35;
+	uv_right	= 512;
+	uv_bottom	= 69;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfDialog"
+{
+	resource_file	= "GiftShopGui.rsr";
+	resource_name	= "rsrGiftShopCommonChrome";
+
+	x		= 0;
+	y		= 0;
+	width		= 320;
+	height		= 480;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 0;
+	uv_top		= 0;
+	uv_right	= 320;
+	uv_bottom	= 480;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfPrePageButton"
+{
+	resource_file	= "GiftShopGui.rsr";
+	resource_name	= "rsrGiftShopCommonChrome";
+
+	x		= 0;
+	y		= 0;
+	width		= 33;
+	height		= 21;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 321;
+	uv_top		= 23;
+	uv_right	= 354;
+	uv_bottom	= 44;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfPrePageButtonFocus"
+{
+	resource_file	= "GiftShopGui.rsr";
+	resource_name	= "rsrGiftShopCommonChrome";
+
+	x		= 0;
+	y		= 0;
+	width		= 33;
+	height		= 21;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 355;
+	uv_top		= 23;
+	uv_right	= 388;
+	uv_bottom	= 44;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfPrePageButtonDown"
+{
+	resource_file	= "GiftShopGui.rsr";
+	resource_name	= "rsrGiftShopCommonChrome";
+
+	x		= 0;
+	y		= 0;
+	width		= 33;
+	height		= 21;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 389;
+	uv_top		= 23;
+	uv_right	= 422;
+	uv_bottom	= 44;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfPrePageButtonDis"
+{
+	resource_file	= "GiftShopGui.rsr";
+	resource_name	= "rsrGiftShopCommonChrome";
+
+	x		= 0;
+	y		= 0;
+	width		= 33;
+	height		= 21;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 389;
+	uv_top		= 23;
+	uv_right	= 422;
+	uv_bottom	= 44;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfNextPageButton"
+{
+	resource_file	= "GiftShopGui.rsr";
+	resource_name	= "rsrGiftShopCommonChrome";
+
+	x		= 0;
+	y		= 0;
+	width		= 33;
+	height		= 21;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 321;
+	uv_top		= 45;
+	uv_right	= 354;
+	uv_bottom	= 66;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfNextPageButtonFocus"
+{
+	resource_file	= "GiftShopGui.rsr";
+	resource_name	= "rsrGiftShopCommonChrome";
+
+	x		= 0;
+	y		= 0;
+	width		= 33;
+	height		= 21;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 355;
+	uv_top		= 45;
+	uv_right	= 388;
+	uv_bottom	= 66;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfNextPageButtonDown"
+{
+	resource_file	= "GiftShopGui.rsr";
+	resource_name	= "rsrGiftShopCommonChrome";
+
+	x		= 0;
+	y		= 0;
+	width		= 33;
+	height		= 21;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 389;
+	uv_top		= 45;
+	uv_right	= 422;
+	uv_bottom	= 66;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfNextPageButtonDis"
+{
+	resource_file	= "GiftShopGui.rsr";
+	resource_name	= "rsrGiftShopCommonChrome";
+
+	x		= 0;
+	y		= 0;
+	width		= 33;
+	height		= 21;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 389;
+	uv_top		= 45;
+	uv_right	= 422;
+	uv_bottom	= 66;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "MoneyBackPanel"
+{
+	resource_file	= "GiftShopGui.rsr";
+	resource_name	= "rsrGiftShopCommonChrome";
+
+	x		= 0;
+	y		= 0;
+	width		= 103;
+	height		= 20;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 321;
+	uv_top		= 385;
+	uv_right	= 424;
+	uv_bottom	= 405;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "PageBackPanel"
+{
+	resource_file	= "GiftShopGui.rsr";
+	resource_name	= "rsrGiftShopCommonChrome";
+
+	x		= 0;
+	y		= 0;
+	width		= 73;
+	height		= 20;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 426;
+	uv_top		= 15;
+	uv_right	= 499;
+	uv_bottom	= 35;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfTabLeft"
+{
+	resource_file	= "GiftShopGui.rsr";
+	resource_name	= "rsrGiftShopCommonChrome";
+
+	x		= 0;
+	y		= 0;
+	width		= 10;
+	height		= 22;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 321;
+	uv_top		= 0;
+	uv_right	= 331;
+	uv_bottom	= 22;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfTabCenter"
+{
+	resource_file	= "GiftShopGui.rsr";
+	resource_name	= "rsrGiftShopCommonChrome";
+
+	x		= 0;
+	y		= 0;
+	width		= 8;
+	height		= 22;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 333;
+	uv_top		= 0;
+	uv_right	= 341;
+	uv_bottom	= 22;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfTabRight"
+{
+	resource_file	= "GiftShopGui.rsr";
+	resource_name	= "rsrGiftShopCommonChrome";
+
+	x		= 0;
+	y		= 0;
+	width		= 10;
+	height		= 22;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 343;
+	uv_top		= 0;
+	uv_right	= 353;
+	uv_bottom	= 22;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfTabFocLeft"
+{
+	resource_file	= "GiftShopGui.rsr";
+	resource_name	= "rsrGiftShopCommonChrome";
+
+	x		= 0;
+	y		= 0;
+	width		= 10;
+	height		= 22;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 354;
+	uv_top		= 0;
+	uv_right	= 364;
+	uv_bottom	= 22;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfTabFocCenter"
+{
+	resource_file	= "GiftShopGui.rsr";
+	resource_name	= "rsrGiftShopCommonChrome";
+
+	x		= 0;
+	y		= 0;
+	width		= 8;
+	height		= 22;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 366;
+	uv_top		= 0;
+	uv_right	= 374;
+	uv_bottom	= 22;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfTabFocRight"
+{
+	resource_file	= "GiftShopGui.rsr";
+	resource_name	= "rsrGiftShopCommonChrome";
+
+	x		= 0;
+	y		= 0;
+	width		= 10;
+	height		= 22;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 376;
+	uv_top		= 0;
+	uv_right	= 386;
+	uv_bottom	= 22;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfTabSelLeft"
+{
+	resource_file	= "GiftShopGui.rsr";
+	resource_name	= "rsrGiftShopCommonChrome";
+
+	x		= 0;
+	y		= 0;
+	width		= 10;
+	height		= 22;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 387;
+	uv_top		= 0;
+	uv_right	= 397;
+	uv_bottom	= 22;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfTabSelCenter"
+{
+	resource_file	= "GiftShopGui.rsr";
+	resource_name	= "rsrGiftShopCommonChrome";
+
+	x		= 0;
+	y		= 0;
+	width		= 8;
+	height		= 22;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 399;
+	uv_top		= 0;
+	uv_right	= 407;
+	uv_bottom	= 22;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfTabSelRight"
+{
+	resource_file	= "GiftShopGui.rsr";
+	resource_name	= "rsrGiftShopCommonChrome";
+
+	x		= 0;
+	y		= 0;
+	width		= 10;
+	height		= 22;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 409;
+	uv_top		= 0;
+	uv_right	= 419;
+	uv_bottom	= 22;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfTabLine"
+{
+	resource_file	= "GiftShopGui.rsr";
+	resource_name	= "rsrGiftShopCommonChrome";
+
+	x		= 0;
+	y		= 0;
+	width		= 3;
+	height		= 22;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 421;
+	uv_top		= 0;
+	uv_right	= 424;
+	uv_bottom	= 22;
+
+	handle		= 0;
+	blend		= 0;
+}
+
 surface "ItemPanel"
 {
 	resource_file	= "GiftShopGui.rsr";
@@ -52854,6 +53593,869 @@ surface "srfHoipoiBtnDisable"
 	blend		= 0;
 }dialog dlgMain
 {
+	x	= 200;
+ 	y 	= 100;
+	width	= 320;
+	height	= 480;
+
+	titlebar_x		= 0;
+	titlebar_y		= 0;
+	titlebar_width		= 277;
+	titlebar_height		= 20;
+
+	surface_file = "GiftShopMainGui.srf";
+	surface	     = "srfDialog";
+
+	button	ExitButton
+	{
+		x		= 300;
+		y		= 4;
+		width		= 16;
+		height		= 16;
+
+		surface_file 	= "GameCommon.srf";
+		surface_up 	= "srfClose2BtnUp";
+		surface_down 	= "srfClose2BtnDown";
+		surface_focus 	= "srfClose2BtnFoc";
+		surface_disable	= "srfClose2BtnDis";
+	}
+
+	tabbutton TabButton
+	{
+		x 	= 20;
+		y 	= 30;
+		width	= 279;
+		height	= 22;
+
+		surface_file 	= "GiftShopMainGui.srf";
+		initindex	= 0;
+
+		surface_left	= srfTabLeft;
+		surface_center	= srfTabCenter;
+		surface_right	= srfTabRight;
+
+		surface_sel_left	= srfTabSelLeft;
+		surface_sel_center	= srfTabSelCenter;
+		surface_sel_right	= srfTabSelRight;
+
+		surface_foc_left	= srfTabFocLeft;
+		surface_foc_center	= srfTabFocCenter;
+		surface_foc_right	= srfTabFocRight;
+
+		surface_line		= srfTabLine;
+
+		tabtext_margin_x	= 8;
+		tabtext_margin_y	= 3;
+		tab_unsel_width		= 69;
+	}
+
+	panel ItemPanel0
+	{
+		x	= 20;
+	 	y 	= 62;
+		width	= 283;
+		height	= 47;
+
+		surface_file 	= "GiftShopMainGui.srf";
+		surface		= "ItemPanel";
+	}
+
+	panel ItemPanel1
+	{
+		x	= 20;
+	 	y 	= 116;
+		width	= 283;
+		height	= 47;
+
+		surface_file 	= "GiftShopMainGui.srf";
+		surface		= "ItemPanel";
+	}
+
+	panel ItemPanel2
+	{
+		x	= 20;
+	 	y 	= 170;
+		width	= 283;
+		height	= 47;
+
+		surface_file 	= "GiftShopMainGui.srf";
+		surface		= "ItemPanel";
+	}
+
+	panel ItemPanel3
+	{
+		x	= 20;
+	 	y 	= 224;
+		width	= 283;
+		height	= 47;
+
+		surface_file 	= "GiftShopMainGui.srf";
+		surface		= "ItemPanel";
+	}
+
+	panel ItemPanel4
+	{
+		x	= 20;
+	 	y 	= 278;
+		width	= 283;
+		height	= 47;
+
+		surface_file 	= "GiftShopMainGui.srf";
+		surface		= "ItemPanel";
+	}
+
+	panel ItemPanel5
+	{
+		x	= 20;
+	 	y 	= 332;
+		width	= 283;
+		height	= 47;
+
+		surface_file 	= "GiftShopMainGui.srf";
+		surface		= "ItemPanel";
+	}
+
+	button PrePageButton
+	{
+		x	= 168;
+	 	y 	= 406;
+		width	= 33;
+		height	= 21;
+
+		surface_file 	= "GiftShopMainGui.srf";
+		surface_up   	= "srfPrePageButton";
+		surface_focus  	= "srfPrePageButtonFocus";
+		surface_down   	= "srfPrePageButtonDown";
+		surface_disable	= "srfPrePageButtonDis";
+	}
+
+	button NextPageButton
+	{
+		x	= 277;
+	 	y 	= 406;
+		width	= 33;
+		height	= 21;
+
+		surface_file 	= "GiftShopMainGui.srf";
+		surface_up   	= "srfNextPageButton";
+		surface_focus  	= "srfNextPageButtonFocus";
+		surface_down   	= "srfNextPageButtonDown";
+		surface_disable	= "srfNextPageButtonDis";
+	}
+
+	staticbox StaticUsePoint
+	{
+		x	= 195;
+	 	y 	= 443;
+		width	= 82;
+		height	= 20;
+
+		font_name       	= Default;
+
+		//font_height		= 100;
+		text_style		= right;
+		text_color_red		= 255;
+		text_color_green	= 255;
+		text_color_blue		= 255;
+
+		surface_file        	= "GiftShopMainGui.srf";
+		surface	            	= "MoneyBackPanel";
+	}
+
+	staticbox StaticICon
+	{
+		x	= 278;
+	 	y 	= 445;
+		width	= 17;
+		height	= 15;
+
+		font_name       	= Default;
+		enabled         	= false;
+
+		//font_height		= 100;
+		text_style		= right;
+		text_color_red		= 255;
+		text_color_green	= 255;
+		text_color_blue		= 255;
+
+		surface_file        	= "GiftShopMainGui.srf";
+		surface	            	= "WPIcon";
+	}
+
+	button BtnHoipoiMixOpen
+	{
+		x			= 27;
+		y			= 414;
+		width 			= 36;
+		height 			= 36;
+
+		surface_file 		= "GiftShopMainGui.srf";
+		surface_up	 	= "srfHoipoiBtnUp";
+		surface_focus 		= "srfHoipoiBtnFocus";
+		surface_down		= "srfHoipoiBtnDown";
+		surface_disable		= "srfHoipoiBtnDisable";
+	}
+}
+resource "rsrGiftShopMain"
+{
+	handle	= 0;
+	file	= "wnd_gift_shop.png";
+}
+
+resource "rsrGiftShopMainChrome"
+{
+	handle	= 0;
+	file	= "wnd_netpy_shop1.png";
+}
+surface "srfDialog"
+{
+	resource_file	= "NetPyShopGui.rsr";
+	resource_name	= "rsrNetPyShop1";
+
+	x		= 0;
+	y		= 0;
+	width		= 320;
+	height		= 480;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 0;
+	uv_top		= 0;
+	uv_right	= 320;
+	uv_bottom	= 480;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfPrePageButton"
+{
+	resource_file	= "NetPyShopGui.rsr";
+	resource_name	= "rsrNetPyShop1";
+
+	x		= 0;
+	y		= 0;
+	width		= 33;
+	height		= 21;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 321;
+	uv_top		= 23;
+	uv_right	= 354;
+	uv_bottom	= 44;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfPrePageButtonFocus"
+{
+	resource_file	= "NetPyShopGui.rsr";
+	resource_name	= "rsrNetPyShop1";
+
+	x		= 0;
+	y		= 0;
+	width		= 33;
+	height		= 21;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 355;
+	uv_top		= 23;
+	uv_right	= 388;
+	uv_bottom	= 44;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfPrePageButtonDown"
+{
+	resource_file	= "NetPyShopGui.rsr";
+	resource_name	= "rsrNetPyShop1";
+
+	x		= 0;
+	y		= 0;
+	width		= 33;
+	height		= 21;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 389;
+	uv_top		= 23;
+	uv_right	= 422;
+	uv_bottom	= 44;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfPrePageButtonDis"
+{
+	resource_file	= "NetPyShopGui.rsr";
+	resource_name	= "rsrNetPyShop1";
+
+	x		= 0;
+	y		= 0;
+	width		= 33;
+	height		= 21;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 389;
+	uv_top		= 23;
+	uv_right	= 422;
+	uv_bottom	= 44;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfNextPageButton"
+{
+	resource_file	= "NetPyShopGui.rsr";
+	resource_name	= "rsrNetPyShop1";
+
+	x		= 0;
+	y		= 0;
+	width		= 33;
+	height		= 21;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 321;
+	uv_top		= 45;
+	uv_right	= 354;
+	uv_bottom	= 66;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfNextPageButtonFocus"
+{
+	resource_file	= "NetPyShopGui.rsr";
+	resource_name	= "rsrNetPyShop1";
+
+	x		= 0;
+	y		= 0;
+	width		= 33;
+	height		= 21;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 355;
+	uv_top		= 45;
+	uv_right	= 388;
+	uv_bottom	= 66;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfNextPageButtonDown"
+{
+	resource_file	= "NetPyShopGui.rsr";
+	resource_name	= "rsrNetPyShop1";
+
+	x		= 0;
+	y		= 0;
+	width		= 33;
+	height		= 21;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 389;
+	uv_top		= 45;
+	uv_right	= 422;
+	uv_bottom	= 66;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfNextPageButtonDis"
+{
+	resource_file	= "NetPyShopGui.rsr";
+	resource_name	= "rsrNetPyShop1";
+
+	x		= 0;
+	y		= 0;
+	width		= 33;
+	height		= 21;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 389;
+	uv_top		= 45;
+	uv_right	= 422;
+	uv_bottom	= 66;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "MoneyBackPanel"
+{
+	resource_file	= "NetPyShopGui.rsr";
+	resource_name	= "rsrNetPyShop1";
+
+	x		= 0;
+	y		= 0;
+	width		= 103;
+	height		= 20;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 321;
+	uv_top		= 385;
+	uv_right	= 424;
+	uv_bottom	= 405;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "PageBackPanel"
+{
+	resource_file	= "NetPyShopGui.rsr";
+	resource_name	= "rsrNetPyShop1";
+
+	x		= 0;
+	y		= 0;
+	width		= 73;
+	height		= 20;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 426;
+	uv_top		= 15;
+	uv_right	= 499;
+	uv_bottom	= 35;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfTabLeft"
+{
+	resource_file	= "NetPyShopGui.rsr";
+	resource_name	= "rsrNetPyShop1";
+
+	x		= 0;
+	y		= 0;
+	width		= 10;
+	height		= 22;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 321;
+	uv_top		= 0;
+	uv_right	= 331;
+	uv_bottom	= 22;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfTabCenter"
+{
+	resource_file	= "NetPyShopGui.rsr";
+	resource_name	= "rsrNetPyShop1";
+
+	x		= 0;
+	y		= 0;
+	width		= 8;
+	height		= 22;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 333;
+	uv_top		= 0;
+	uv_right	= 341;
+	uv_bottom	= 22;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfTabRight"
+{
+	resource_file	= "NetPyShopGui.rsr";
+	resource_name	= "rsrNetPyShop1";
+
+	x		= 0;
+	y		= 0;
+	width		= 10;
+	height		= 22;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 343;
+	uv_top		= 0;
+	uv_right	= 353;
+	uv_bottom	= 22;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfTabFocLeft"
+{
+	resource_file	= "NetPyShopGui.rsr";
+	resource_name	= "rsrNetPyShop1";
+
+	x		= 0;
+	y		= 0;
+	width		= 10;
+	height		= 22;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 354;
+	uv_top		= 0;
+	uv_right	= 364;
+	uv_bottom	= 22;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfTabFocCenter"
+{
+	resource_file	= "NetPyShopGui.rsr";
+	resource_name	= "rsrNetPyShop1";
+
+	x		= 0;
+	y		= 0;
+	width		= 8;
+	height		= 22;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 366;
+	uv_top		= 0;
+	uv_right	= 374;
+	uv_bottom	= 22;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfTabFocRight"
+{
+	resource_file	= "NetPyShopGui.rsr";
+	resource_name	= "rsrNetPyShop1";
+
+	x		= 0;
+	y		= 0;
+	width		= 10;
+	height		= 22;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 376;
+	uv_top		= 0;
+	uv_right	= 386;
+	uv_bottom	= 22;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfTabSelLeft"
+{
+	resource_file	= "NetPyShopGui.rsr";
+	resource_name	= "rsrNetPyShop1";
+
+	x		= 0;
+	y		= 0;
+	width		= 10;
+	height		= 22;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 387;
+	uv_top		= 0;
+	uv_right	= 397;
+	uv_bottom	= 22;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfTabSelCenter"
+{
+	resource_file	= "NetPyShopGui.rsr";
+	resource_name	= "rsrNetPyShop1";
+
+	x		= 0;
+	y		= 0;
+	width		= 8;
+	height		= 22;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 399;
+	uv_top		= 0;
+	uv_right	= 407;
+	uv_bottom	= 22;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfTabSelRight"
+{
+	resource_file	= "NetPyShopGui.rsr";
+	resource_name	= "rsrNetPyShop1";
+
+	x		= 0;
+	y		= 0;
+	width		= 10;
+	height		= 22;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 409;
+	uv_top		= 0;
+	uv_right	= 419;
+	uv_bottom	= 22;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfTabLine"
+{
+	resource_file	= "NetPyShopGui.rsr";
+	resource_name	= "rsrNetPyShop1";
+
+	x		= 0;
+	y		= 0;
+	width		= 3;
+	height		= 22;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 421;
+	uv_top		= 0;
+	uv_right	= 424;
+	uv_bottom	= 22;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "ItemPanel"
+{
+	resource_file	= "GiftShopGui.rsr";
+	resource_name	= "rsrGiftShop";
+
+	x		= 0;
+	y		= 0;
+	width		= 283;
+	height		= 47;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 110;
+	uv_top		= 0;
+	uv_right	= 393;
+	uv_bottom	= 47;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "WPIcon"
+{
+	resource_file	= "GiftShopGui.rsr";
+	resource_name	= "rsrGiftShop";
+
+	x		= 0;
+	y		= 0;
+	width		= 17;
+	height		= 15;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 394;
+	uv_top		= 32;
+	uv_right	= 411;
+	uv_bottom	= 47;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfHoipoiBtnUp"
+{
+	resource_file	= "GiftShopGui.rsr";
+	resource_name	= "rsrGiftShop";
+
+	x		= 0;
+	y		= 0;
+	width		= 36;
+	height		= 36;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 301;
+	uv_top		= 49;
+	uv_right	= 337;
+	uv_bottom	= 85;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfHoipoiBtnFocus"
+{
+	resource_file	= "GiftShopGui.rsr";
+	resource_name	= "rsrGiftShop";
+
+	x		= 0;
+	y		= 0;
+	width		= 36;
+	height		= 36;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 338;
+	uv_top		= 49;
+	uv_right	= 374;
+	uv_bottom	= 85;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfHoipoiBtnDown"
+{
+	resource_file	= "GiftShopGui.rsr";
+	resource_name	= "rsrGiftShop";
+
+	x		= 0;
+	y		= 0;
+	width		= 36;
+	height		= 36;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 375;
+	uv_top		= 49;
+	uv_right	= 411;
+	uv_bottom	= 85;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfHoipoiBtnDisable"
+{
+	resource_file	= "GiftShopGui.rsr";
+	resource_name	= "rsrGiftShop";
+
+	x		= 0;
+	y		= 0;
+	width		= 36;
+	height		= 36;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 412;
+	uv_top		= 49;
+	uv_right	= 448;
+	uv_bottom	= 85;
+
+	handle		= 0;
+	blend		= 0;
+}
+dialog dlgMain
+{
 	x	= 0;
  	y 	= 0;
 	width	= 43;
@@ -52894,6 +54496,77 @@ dialog dlgMain
 		text_color_blue = 255;
 		font_attribute	= 0;
 	}
+}
+surface "srfDialogBackUp"
+{
+	resource_file	= "Game.rsr";
+	resource_name	= "rsrRaceCommon2";
+
+	x		= 0;
+	y		= 0;
+	width		= 282;
+	height		= 24;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 230;
+	uv_top		= 0;
+	uv_right	= 512;
+	uv_bottom	= 24;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfDialogBackCenter"
+{
+	resource_file	= "Game.rsr";
+	resource_name	= "rsrRaceCommon2";
+
+	x		= 0;
+	y		= 0;
+	width		= 282;
+	height		= 3;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 230;
+	uv_top		= 28;
+	uv_right	= 512;
+	uv_bottom	= 31;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfDialogBackDown"
+{
+	resource_file	= "Game.rsr";
+	resource_name	= "rsrRaceCommon2";
+
+	x		= 0;
+	y		= 0;
+	width		= 282;
+	height		= 34;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 230;
+	uv_top		= 35;
+	uv_right	= 512;
+	uv_bottom	= 69;
+
+	handle		= 0;
+	blend		= 0;
 }
 // --------------------------------------------------------------------------------------
 // Dialog Setting
