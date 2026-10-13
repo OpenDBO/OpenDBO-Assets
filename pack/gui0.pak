@@ -30921,6 +30921,10 @@ surface "srfColorDiable"
 
 	handle		= 0;
 	blend		= 0;
+}resource "rsrDojoAccount"
+{
+	handle	= 0;
+	file	= "wnd_dojo.png";
 }dialog dlgMain
 {
 	x	= 200;
@@ -118006,7 +118010,9 @@ dialog dlgMain
 	height	= 324;
 	
 	surface_file = "GameCommon.srf";
-	surface	     = "srfSideDialog";
+	surface	     = "srfSideDialogTop";
+	surface	     = "srfSideDialogCenter";
+	surface	     = "srfSideDialogBottom";
 
 	button	btnMinimize
 	{
