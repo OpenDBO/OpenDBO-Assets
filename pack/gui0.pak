@@ -73147,6 +73147,30 @@ resource "rsrItemUpgrade"
     handle  = 0;
     file    = "wnd_upgrade3.png";
 }
+
+resource "rsrItemUpgradeEx"
+{
+    handle  = 0;
+    file    = "wnd_upgrade3.png";
+}
+
+resource "rsrItemUpgradeEx1"
+{
+    handle  = 0;
+    file    = "upgrade_wnd_01.png";
+}
+
+resource "rsrItemUpgradeEx2"
+{
+    handle  = 0;
+    file    = "upgrade_wnd_02.png";
+}
+
+resource "rsrItemUpgradeEx3"
+{
+    handle  = 0;
+    file    = "upgrade_wnd_03.png";
+}
 surface "srfDialogUp"
 {
 	resource_file	= "ItemUpgrade.rsr";
@@ -73549,7 +73573,743 @@ surface "srfItemUpgradeBtnSelectDis"
 	handle		= 0;
 	blend		= 0;
 }
-// --------------------------------------------------------------------------------------
+surface "srfDialogUp"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx";
+
+	x		= 0;
+	y		= 0;
+	width		= 264;
+	height		= 161;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 0;
+	uv_top		= 0;
+	uv_right	= 264;
+	uv_bottom	= 161;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfDialogItemGradeTransUp"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx";
+
+	x		= 0;
+	y		= 0;
+	width		= 264;
+	height		= 161;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 0;
+	uv_top		= 234;
+	uv_right	= 264;
+	uv_bottom	= 395;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfDialogMid"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx";
+
+	x		= 0;
+	y		= 161;
+	width		= 264;
+	height		= 200;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 0;
+	uv_top		= 163;
+	uv_right	= 264;
+	uv_bottom	= 166;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfDialogDown"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx";
+
+	x		= 0;
+	y		= 361;
+	width		= 264;
+	height		= 63;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 0;
+	uv_top		= 168;
+	uv_right	= 264;
+	uv_bottom	= 231;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfItemUpgradeEffect"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx";
+
+	x		= 0;
+	y		= 0;
+	width		= 238;
+	height		= 101;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 265;
+	uv_top		= 130;
+	uv_right	= 503;
+	uv_bottom	= 231;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfItemUpgradeItemEffect"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx";
+
+	x		= 0;
+	y		= 0;
+	width		= 54;
+	height		= 54;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 33;
+	uv_top		= 437;
+	uv_right	= 87;
+	uv_bottom	= 491;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfItemUpgradeStoneEffect"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx";
+
+	x		= 0;
+	y		= 0;
+	width		= 54;
+	height		= 54;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 88;
+	uv_top		= 437;
+	uv_right	= 142;
+	uv_bottom	= 491;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfItemUpgradeSelectEffect"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx";
+
+	x		= 0;
+	y		= 0;
+	width		= 54;
+	height		= 54;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 143;
+	uv_top		= 437;
+	uv_right	= 197;
+	uv_bottom	= 491;
+
+	handle		= 0;
+	blend		= 0;
+}
+surface "srfItemUpgradeMouseMove"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx";
+
+	x		= 0;
+	y		= 0;
+	width		= 32;
+	height		= 32;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 154;
+	uv_top		= 448;
+	uv_right	= 186;
+	uv_bottom	= 480;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfItemUpgradeBtnExitUp"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx";
+
+	x		= 0;
+	y		= 0;
+	width		= 16;
+	height		= 16;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 276;
+	uv_top		= 437;
+	uv_right	= 292;
+	uv_bottom	= 453;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfItemUpgradeBtnExitFoc"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx";
+
+	x		= 0;
+	y		= 0;
+	width		= 16;
+	height		= 16;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 276;
+	uv_top		= 454;
+	uv_right	= 292;
+	uv_bottom	= 470;
+
+	handle		= 0;
+	blend		= 0;
+}
+surface "srfItemUpgradeBtnExitDown"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx";
+
+	x		= 0;
+	y		= 0;
+	width		= 16;
+	height		= 16;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 276;
+	uv_top		= 471;
+	uv_right	= 292;
+	uv_bottom	= 487;
+
+	handle		= 0;
+	blend		= 0;
+}
+surface "srfItemUpgradeBtnExitDis"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx";
+
+	x		= 0;
+	y		= 0;
+	width		= 16;
+	height		= 16;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 276;
+	uv_top		= 488;
+	uv_right	= 292;
+	uv_bottom	= 504;
+
+	handle		= 0;
+	blend		= 0;
+}
+surface "srfItemUpgradeBtnSelectUp"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx";
+
+	x		= 0;
+	y		= 0;
+	width		= 89;
+	height		= 25;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 293;
+	uv_top		= 437;
+	uv_right	= 382;
+	uv_bottom	= 462;
+
+	handle		= 0;
+	blend		= 0;
+}
+surface "srfItemUpgradeBtnSelectDown"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx";
+
+	x		= 0;
+	y		= 0;
+	width		= 89;
+	height		= 25;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 383;
+	uv_top		= 437;
+	uv_right	= 472;
+	uv_bottom	= 462;
+
+	handle		= 0;
+	blend		= 0;
+}
+surface "srfItemUpgradeBtnSelectFoc"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx";
+
+	x		= 0;
+	y		= 0;
+	width		= 89;
+	height		= 25;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 293;
+	uv_top		= 463;
+	uv_right	= 382;
+	uv_bottom	= 488;
+
+	handle		= 0;
+	blend		= 0;
+}
+surface "srfItemUpgradeBtnSelectDis"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx";
+
+	x		= 0;
+	y		= 0;
+	width		= 89;
+	height		= 25;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 383;
+	uv_top		= 463;
+	uv_right	= 472;
+	uv_bottom	= 488;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+
+surface "srfItemUpgradeBackLeft"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx1";
+
+	x		= 0;
+	y		= 0;
+	width		= 512;
+	height		= 340;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 0;
+	uv_top		= 0;
+	uv_right	= 512;
+	uv_bottom	= 340;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfItemUpgradeBackRight"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx2";
+
+	x		= 512;
+	y		= 0;
+	width		= 512;
+	height		= 340;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 0;
+	uv_top		= 0;
+	uv_right	= 512;
+	uv_bottom	= 340;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfItemUpgradeBtnConFoc"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx2";
+
+	x		= 0;
+	y		= 0;
+	width		= 40;
+	height		= 40;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 0;
+	uv_top		= 341;
+	uv_right	= 40;
+	uv_bottom	= 381;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfItemUpgradeBtnConMid"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx2";
+
+	x		= 0;
+	y		= 0;
+	width		= 40;
+	height		= 40;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 0;
+	uv_top		= 382;
+	uv_right	= 40;
+	uv_bottom	= 422;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfItemUpgradeBtnConDown"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx2";
+
+	x		= 0;
+	y		= 0;
+	width		= 40;
+	height		= 40;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 0;
+	uv_top		= 423;
+	uv_right	= 40;
+	uv_bottom	= 463;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfItemUpgradeBtnBackFoc"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx2";
+
+	x		= 0;
+	y		= 0;
+	width		= 40;
+	height		= 40;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 41;
+	uv_top		= 341;
+	uv_right	= 81;
+	uv_bottom	= 381;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfItemUpgradeBtnBackMid"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx2";
+
+	x		= 0;
+	y		= 0;
+	width		= 40;
+	height		= 40;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 41;
+	uv_top		= 382;
+	uv_right	= 81;
+	uv_bottom	= 422;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfItemUpgradeBtnBackDown"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx2";
+
+	x		= 0;
+	y		= 0;
+	width		= 40;
+	height		= 40;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 41;
+	uv_top		= 423;
+	uv_right	= 81;
+	uv_bottom	= 463;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfItemUpgradeCardFocEffect"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx3";
+
+	x		= 0;
+	y		= 0;
+	width		= 152;
+	height		= 196;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 0;
+	uv_top		= 0;
+	uv_right	= 152;
+	uv_bottom	= 196;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfItemUpgradeCardMid"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx3";
+
+	x		= 0;
+	y		= 0;
+	width		= 138;
+	height		= 184;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 153;
+	uv_top		= 0;
+	uv_right	= 291;
+	uv_bottom	= 184;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfItemUpgradeCardFoc"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx3";
+
+	x		= 0;
+	y		= 0;
+	width		= 138;
+	height		= 184;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 292;
+	uv_top		= 0;
+	uv_right	= 430;
+	uv_bottom	= 184;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfItemUpgradeCardSuc"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx3";
+
+	x		= 0;
+	y		= 0;
+	width		= 138;
+	height		= 184;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 0;
+	uv_top		= 327;
+	uv_right	= 138;
+	uv_bottom	= 511;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfItemUpgradeCardFail"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx3";
+
+	x		= 0;
+	y		= 0;
+	width		= 138;
+	height		= 184;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 139;
+	uv_top		= 327;
+	uv_right	= 277;
+	uv_bottom	= 511;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfItemUpgradeCardBro"
+{
+	resource_file	= "ItemUpgrade.rsr";
+	resource_name	= "rsrItemUpgradeEx3";
+
+	x		= 0;
+	y		= 0;
+	width		= 138;
+	height		= 184;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 278;
+	uv_top		= 327;
+	uv_right	= 416;
+	uv_bottom	= 511;
+
+	handle		= 0;
+	blend		= 0;
+}// --------------------------------------------------------------------------------------
 // Dialog Setting
 
 dialog dlgMain
