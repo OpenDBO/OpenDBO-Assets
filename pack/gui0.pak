@@ -45325,6 +45325,30 @@ surface "srfMarkMobHaveDragonBall"
 	blend		= 0;
 }
 
+surface "srfMarkMobQuest"
+{
+	resource_file	= "Game.rsr";
+	resource_name	= "rsrRaceCommon";
+
+	x		= 0;
+	y		= 0;
+	width		= 16;
+	height		= 16;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 446;
+	uv_top		= 2;
+	uv_right	= 462;
+	uv_bottom	= 18;
+
+	handle		= 0;
+	blend		= 0;
+}
+
 surface "srfMarkPartyMember"
 {
 	resource_file	= "Game.rsr";
