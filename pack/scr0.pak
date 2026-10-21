@@ -15981,4 +15981,114 @@ TLCondition(ETL_CONDITION_TYPE_QUEST_FINISH, 11013);<?xml version="1.0"?>
 		<sound global_sound="" particle_sound_time="0.0">
 		</sound>
 	</weather>
-</weather_property>0
+</weather_property><?xml version="1.0" encoding="euc-kr" standalone="yes"?>
+
+<WorldmapSearchData>
+
+	<SearchCategory SearchName = "DST_WORLDMAP_SEARCH_NPC_NONE" bySearchType = "-1"/>
+
+	<SearchCategory SearchName = "DST_JOB_WEAPON_MERCHANT" bySearchType = "0">
+		<ChildData JobType = "0" JobBitFlag = "1"/>
+		<ChildData JobType = "17" JobBitFlag = "1"/>
+		<ChildData JobType = "29" JobBitFlag = "1"/>
+	</SearchCategory>
+
+	<SearchCategory SearchName = "DST_JOB_ARMOR_MERCHANT" bySearchType = "0">
+		<ChildData JobType = "1" JobBitFlag = "1"/>
+		<ChildData JobType = "18" JobBitFlag = "1"/>
+	</SearchCategory>
+
+	<SearchCategory SearchName = "DST_JOB_DOGI_MERCHANT" bySearchType = "0">
+		<ChildData JobType = "16" JobBitFlag = "1"/>
+	</SearchCategory>
+
+	<SearchCategory SearchName = "DST_JOB_GOODS_MERCHANT" bySearchType = "0">
+		<ChildData JobType = "2" JobBitFlag = "1"/>
+		<ChildData JobType = "19" JobBitFlag = "1"/>
+		<ChildData JobType = "20" JobBitFlag = "1"/>
+		<ChildData JobType = "31" JobBitFlag = "1"/>
+	</SearchCategory>
+
+	<SearchCategory SearchName = "DST_JOB_VEHICLE_MERCHANT" bySearchType = "0">
+		<ChildData JobType = "53" JobBitFlag = "1"/>
+	</SearchCategory>
+
+	<SearchCategory SearchName = "DST_JOB_SCOUTER_MERCHANT" bySearchType = "0">
+		<ChildData JobType = "3" JobBitFlag = "1"/>
+		<ChildData JobType = "21" JobBitFlag = "1"/>
+		<ChildData JobType = "58" JobBitFlag = "1"/>
+		<ChildData JobType = "59" JobBitFlag = "1"/>
+	</SearchCategory>
+
+	<SearchCategory SearchName = "DST_JOB_ITEMUPGREAD_MERCHANT" bySearchType = "0">
+		<ChildData JobType = "52" JobBitFlag = "536870912"/>
+	</SearchCategory>
+
+	<SearchCategory SearchName = "DST_JOB_BANKER" bySearchType = "0">
+		<ChildData JobType = "12" JobBitFlag = "8"/>
+	</SearchCategory>
+
+	<SearchCategory SearchName = "DST_WORLDMAP_SEARCH_NPC_SKILLMASTER" bySearchType = "0">
+		<ChildData JobType = "5" JobBitFlag = "4"/>
+		<ChildData JobType = "6" JobBitFlag = "4"/>
+		<ChildData JobType = "8" JobBitFlag = "4"/>
+		<ChildData JobType = "9" JobBitFlag = "4"/>
+		<ChildData JobType = "10" JobBitFlag = "4"/>
+		<ChildData JobType = "11" JobBitFlag = "4"/>
+		<ChildData JobType = "22" JobBitFlag = "4"/>
+		<ChildData JobType = "23" JobBitFlag = "4"/>
+		<ChildData JobType = "25" JobBitFlag = "4"/>
+		<ChildData JobType = "26" JobBitFlag = "4"/>
+		<ChildData JobType = "27" JobBitFlag = "4"/>
+		<ChildData JobType = "28" JobBitFlag = "4"/>
+	</SearchCategory>
+
+	<SearchCategory SearchName = "DST_WORLDMAP_SEARCH_NPC_MAILBOX" bySearchType = "1">
+		<ChildData JobType = "255" JobBitFlag = "128"/>
+	</SearchCategory>
+
+	<SearchCategory SearchName = "DST_MARKET_CONSOLE_MACHINE" bySearchType = "1">
+		<ChildData JobType = "255" JobBitFlag = "32768"/>
+	</SearchCategory>
+
+	<SearchCategory SearchName = "DST_WORLDMAP_SEARCH_NPC_ITEMBIND" bySearchType = "0">
+		<ChildData JobType = "31" JobBitFlag = "128"/>
+	</SearchCategory>
+
+	<SearchCategory SearchName = "DST_WORLDMAP_SEARCH_NPC_DOJO" bySearchType = "0">
+		<ChildData JobType = "14" JobBitFlag = "64"/>
+		<ChildData JobType = "40" JobBitFlag = "8388608"/>
+	</SearchCategory>
+
+	<SearchCategory SearchName = "DST_JOB_MASCOT_GAMBLE_MERCHANT" bySearchType = "0">
+		<ChildData JobType = "50" JobBitFlag = "1048576"/>
+		<ChildData JobType = "56" JobBitFlag = "1048576"/>
+	</SearchCategory>
+
+	<SearchCategory SearchName = "DST_JOB_MIX_MASTER" bySearchType = "0">
+		<ChildData JobType = "44" JobBitFlag = "1"/>
+	</SearchCategory>
+
+	<SearchCategory SearchName = "DST_JOB_GAMBLE_MERCHANT" bySearchType = "0">
+		<ChildData JobType = "38" JobBitFlag = "1048576"/>
+	</SearchCategory>
+
+	<SearchCategory SearchName = "DST_WORLDMAP_SEARCH_NPC_RANKBATTLE" bySearchType = "1">
+		<ChildData JobType = "255" JobBitFlag = "16"/>
+	</SearchCategory>
+	<!-- CCBD -->
+	<SearchCategory SearchName = "DST_CCBD" bySearchType = "0">
+		<!--ChildData JobType = "31" JobBitFlag = "2147483648"/-->
+		<ChildData JobType = "51" JobBitFlag = "268435456"/>
+	</SearchCategory>
+
+	<SearchCategory SearchName = "DST_WORLDMAP_SEARCH_NPC_RECEPTION" bySearchType = "0">
+		<ChildData JobType = "35" JobBitFlag = "16"/>
+		<ChildData JobType = "36" JobBitFlag = "16385"/>
+	</SearchCategory>
+
+	<SearchCategory SearchName = "DST_JOB_EVENT_NPC" bySearchType = "0">
+		<ChildData JobType = "48" JobBitFlag = "3221225472"/>
+	</SearchCategory>
+</WorldmapSearchData>
+0
