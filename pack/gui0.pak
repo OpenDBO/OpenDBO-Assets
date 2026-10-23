@@ -3772,7 +3772,471 @@ surface "NPCMarkCenter"
 	blend		= 0;
 }
 
-dialog dlgMain
+resource "rsrBaseTabState"
+{
+	handle	= 0;
+	file	= "wnd_upgrade2.png";
+}
+
+resource "rsrItemUpgrade"
+{
+	handle	= 0;
+	file	= "wnd_upgrade2.png";
+}surface "srfBackLineTop"
+{
+	resource_file	= "BaseTabStateGui.rsr";
+	resource_name	= "rsrBaseTabState";
+
+	x		= 15;
+	y		= 0;
+	width		= 288;
+	height		= 7;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 0;
+	uv_top		= 0;
+	uv_right	= 288;
+	uv_bottom	= 7;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfBackLineCenter"
+{
+	resource_file	= "BaseTabStateGui.rsr";
+	resource_name	= "rsrBaseTabState";
+
+	x		= 15;
+	y		= 7;
+	width		= 288;
+	height		= 85;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 0;
+	uv_top		= 9;
+	uv_right	= 288;
+	uv_bottom	= 10;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfBackLineBottom"
+{
+	resource_file	= "BaseTabStateGui.rsr";
+	resource_name	= "rsrBaseTabState";
+
+	x		= 15;
+	y		= 85;
+	width		= 288;
+	height		= 7;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 0;
+	uv_top		= 12;
+	uv_right	= 288;
+	uv_bottom	= 19;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfTargetItemName"
+{
+	resource_file	= "BaseTabStateGui.rsr";
+	resource_name	= "rsrBaseTabState";
+
+	x		= 0;
+	y		= 0;
+	width		= 180;
+	height		= 23;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 85;
+	uv_top		= 20;
+	uv_right	= 265;
+	uv_bottom	= 43;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfHtmlComment"
+{
+	resource_file	= "BaseTabStateGui.rsr";
+	resource_name	= "rsrBaseTabState";
+
+	x		= 0;
+	y		= 0;
+	width		= 273;
+	height		= 95;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 0;
+	uv_top		= 44;
+	uv_right	= 273;
+	uv_bottom	= 139;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfOperateBg"
+{
+	resource_file	= "BaseTabStateGui.rsr";
+	resource_name	= "rsrBaseTabState";
+
+	x		= 0;
+	y		= 0;
+	width		= 273;
+	height		= 77;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 0;
+	uv_top		= 140;
+	uv_right	= 273;
+	uv_bottom	= 217;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfTitleBg"
+{
+	resource_file	= "BaseTabStateGui.rsr";
+	resource_name	= "rsrBaseTabState";
+
+	x		= 0;
+	y		= 0;
+	width		= 84;
+	height		= 23;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 0;
+	uv_top		= 20;
+	uv_right	= 84;
+	uv_bottom	= 43;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfValueBg"
+{
+	resource_file	= "BaseTabStateGui.rsr";
+	resource_name	= "rsrBaseTabState";
+
+	x		= 0;
+	y		= 0;
+	width		= 180;
+	height		= 23;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 85;
+	uv_top		= 20;
+	uv_right	= 265;
+	uv_bottom	= 43;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfResultItemNameBg"
+{
+	resource_file	= "BaseTabStateGui.rsr";
+	resource_name	= "rsrBaseTabState";
+
+	x		= 0;
+	y		= 0;
+	width		= 213;
+	height		= 35;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 0;
+	uv_top		= 218;
+	uv_right	= 215;
+	uv_bottom	= 253;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfSuccCardImg"
+{
+	resource_file	= "BaseTabStateGui.rsr";
+	resource_name	= "rsrBaseTabState";
+
+	x		= 0;
+	y		= 0;
+	width		= 135;
+	height		= 180;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 0;
+	uv_top		= 330;
+	uv_right	= 135;
+	uv_bottom	= 512;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfBrokenCardImg"
+{
+	resource_file	= "BaseTabStateGui.rsr";
+	resource_name	= "rsrBaseTabState";
+
+	x		= 0;
+	y		= 0;
+	width		= 135;
+	height		= 180;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 275;
+	uv_top		= 330;
+	uv_right	= 410;
+	uv_bottom	= 512;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfFailCardImg"
+{
+	resource_file	= "BaseTabStateGui.rsr";
+	resource_name	= "rsrBaseTabState";
+
+	x		= 0;
+	y		= 0;
+	width		= 135;
+	height		= 180;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 137;
+	uv_top		= 330;
+	uv_right	= 272;
+	uv_bottom	= 512;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfDisassembleOperateBgTop"
+{
+	resource_file	= "BaseTabStateGui.rsr";
+	resource_name	= "rsrBaseTabState";
+
+	x		= 0;
+	y		= 0;
+	width		= 273;
+	height		= 10;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 0;
+	uv_top		= 254;
+	uv_right	= 273;
+	uv_bottom	= 264;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfDisassembleOperateBgMid"
+{
+	resource_file	= "BaseTabStateGui.rsr";
+	resource_name	= "rsrBaseTabState";
+
+	x		= 0;
+	y		= 10;
+	width		= 273;
+	height		= 204;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 0;
+	uv_top		= 266;
+	uv_right	= 273;
+	uv_bottom	= 267;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfDisassembleOperateBgBottom"
+{
+	resource_file	= "BaseTabStateGui.rsr";
+	resource_name	= "rsrBaseTabState";
+
+	x		= 0;
+	y		= 214;
+	width		= 273;
+	height		= 10;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 0;
+	uv_top		= 269;
+	uv_right	= 273;
+	uv_bottom	= 279;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfDisassembleBtnUp"
+{
+	resource_file	= "BaseTabStateGui.rsr";
+	resource_name	= "rsrBaseTabState";
+
+	x		= 0;
+	y		= 0;
+	width		= 32;
+	height		= 32;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 0;
+	uv_top		= 280;
+	uv_right	= 32;
+	uv_bottom	= 312;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfDisassembleBtnFoc"
+{
+	resource_file	= "BaseTabStateGui.rsr";
+	resource_name	= "rsrBaseTabState";
+
+	x		= 0;
+	y		= 0;
+	width		= 32;
+	height		= 32;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 33;
+	uv_top		= 280;
+	uv_right	= 65;
+	uv_bottom	= 312;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfDisassembleBtnDown"
+{
+	resource_file	= "BaseTabStateGui.rsr";
+	resource_name	= "rsrBaseTabState";
+
+	x		= 0;
+	y		= 0;
+	width		= 32;
+	height		= 32;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 66;
+	uv_top		= 280;
+	uv_right	= 98;
+	uv_bottom	= 312;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfDisassembleBtnBG"
+{
+	resource_file	= "BaseTabStateGui.rsr";
+	resource_name	= "rsrBaseTabState";
+
+	x		= 0;
+	y		= 0;
+	width		= 34;
+	height		= 34;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 99;
+	uv_top		= 280;
+	uv_right	= 133;
+	uv_bottom	= 314;
+
+	handle		= 0;
+	blend		= 0;
+}dialog dlgMain
 {
 	x	= 800;
  	y 	= 500;
@@ -70249,6 +70713,275 @@ surface "srfDialogBottom"
 		text_color_blue = 255;
 		font_attribute	= 0;
 		text_effect_mode = "shadow";
+	}
+}dialog dlgBase
+{
+	x	= 0;
+	y 	= 58;
+	width	= 320;
+	height	= 430;
+
+	staticbox ItemDisassembleInfoStatic
+	{
+		x			= 45;
+	 	y 			= 22;
+		width			= 140;
+		height			= 60;
+
+		font_name       	= Default;
+		enabled         	= false;
+
+		font_height		= 90;
+		text_style		= center;
+		text_color_red		= 255;
+		text_color_green	= 255;
+		text_color_blue		= 255;
+	}
+	staticbox ItemDisassembleNameStatic
+	{
+		x			= 202;
+	 	y 			= 57;
+		width			= 84;
+		height			= 23;
+
+		font_name       	= Default;
+		enabled         	= false;
+
+		font_height		= 90;
+		text_style		= center;
+		text_color_red		= 255;
+		text_color_green	= 255;
+		text_color_blue		= 255;
+
+		surface_file        	= "BaseTabStateGui.srf";
+		surface	            	= "srfTitleBg";
+	}
+	staticbox ItemDisassembleSlot
+	{
+		x		= 200;
+		y		= 20;
+		width		= 32;
+		height		= 60;
+
+		font_name       	= Default;
+		enabled         	= false;
+
+		font_height		= 90;
+		text_style		= center;
+		text_color_red		= 255;
+		text_color_green	= 255;
+		text_color_blue		= 255;
+	}
+	staticbox OperateSlot
+	{
+		x			= 120;
+	 	y 			= 108;
+		width			= 84;
+		height			= 17;
+
+		font_name       	= Default;
+		enabled         	= false;
+
+        	font_height		= 100;
+		text_style		= center;
+		text_color_red		= 255;
+		text_color_green	= 255;
+		text_color_blue		= 255;	
+	}
+	panel ItemDisassembleButtonBG
+	{
+		x		= 227;
+		y		= 19;
+		width		= 34;
+		height		= 34;
+
+		surface_file 	= "BaseTabStateGui.srf";
+		surface		= "srfDisassembleBtnBG";
+	}
+	button ItemDisassembleButton
+	{
+		x		= 228;
+		y		= 20;
+		width		= 32;
+		height		= 32;
+
+		surface_file 	= "BaseTabStateGui.srf";
+		surface_up 	= "srfDisassembleBtnUp";
+		surface_down 	= "srfDisassembleBtnDown";
+		surface_focus 	= "srfDisassembleBtnFoc";
+		surface_disable = "srfDisassembleBtnDown";
+	}
+
+	flash FlashDisassemble
+	{
+		x 	= 0;
+		y 	= 0;
+		width	= 0;
+		height	= 0;
+
+		enabled	= false;
+	}
+	frame FrameStage
+	{
+		x		= 0;
+	 	y 		= 0;
+		width		= 288;
+		height		= 320;
+		enabled         = false;		
+
+		staticbox ItemDisassembleResultName
+		{
+			x			= 94;
+		 	y 			= 100;
+			width			= 140;
+			height			= 25;
+
+			font_name       	= Default;
+			enabled         	= false;
+
+	        	font_height		= 100;
+			text_style		= center;
+			text_color_red		= 255;
+			text_color_green	= 255;
+			text_color_blue		= 255;
+		}
+		
+		staticbox OperateBackGround
+		{
+			x			= 22;
+		 	y 			= 130;
+			width			= 274;
+			height			= 224;
+
+			font_name       	= Default;
+			enabled         	= false;
+
+	        	font_height		= 100;
+			text_style		= center;
+			text_color_red		= 255;
+			text_color_green	= 255;
+			text_color_blue		= 255;	
+
+			surface_file        	= "BaseTabStateGui.srf";
+			surface	            	= "srfDisassembleOperateBgTop";
+			surface	            	= "srfDisassembleOperateBgMid";
+			surface	            	= "srfDisassembleOperateBgBottom";
+		}
+
+		staticbox ItemDisassembleResultTitle1
+		{
+			x			= 94;
+		 	y 			= 135;
+			width			= 140;
+			height			= 25;
+
+			font_name       	= Default;
+			enabled         	= false;
+
+			font_height		= 100;
+			text_style		= center;
+			text_color_red		= 255;
+			text_color_green	= 255;
+			text_color_blue		= 255;
+		}
+
+		staticbox ItemDisassembleResultInfo1
+		{
+			x			= 84;
+		 	y 			= 160;
+			width			= 160;
+			height			= 20;
+
+			font_name       	= Default;
+			enabled         	= false;
+
+			font_height		= 90;
+			text_style		= center;
+			text_color_red		= 255;
+			text_color_green	= 255;
+			text_color_blue		= 255;
+		}
+
+		staticbox ItemDisassembleResultTitle2
+		{
+			x			= 94;
+		 	y 			= 205;
+			width			= 140;
+			height			= 25;
+
+			font_name       	= Default;
+			enabled         	= false;
+
+			font_height		= 100;
+			text_style		= center;
+			text_color_red		= 255;
+			text_color_green	= 255;
+			text_color_blue		= 255;
+		}
+
+		staticbox ItemDisassembleResultInfo2
+		{
+			x			= 84;
+		 	y 			= 230;
+			width			= 160;
+			height			= 20;
+
+			font_name       	= Default;
+			enabled         	= false;
+
+			font_height		= 90;
+			text_style		= center;
+			text_color_red		= 255;
+			text_color_green	= 255;
+			text_color_blue		= 255;
+		}
+
+		staticbox ItemDisassembleResultTitle3
+		{
+			x			= 94;
+		 	y 			= 275;
+			width			= 140;
+			height			= 25;
+
+			font_name       	= Default;
+			enabled         	= false;
+
+			font_height		= 100;
+			text_style		= center;
+			text_color_red		= 255;
+			text_color_green	= 255;
+			text_color_blue		= 255;
+		}
+
+		staticbox ItemDisassembleResultInfo3
+		{
+			x			= 84;
+		 	y 			= 290;
+			width			= 160;
+			height			= 20;
+
+			font_name       	= Default;
+			enabled         	= false;
+
+			font_height		= 90;
+			text_style		= center;
+			text_color_red		= 255;
+			text_color_green	= 255;
+			text_color_blue		= 255;
+		}
+	}
+	button ItemDisassembleCancel
+	{
+		x		= 115;
+		y		= 385;
+		width		= 89;
+		height		= 25;
+
+		surface_file 	= "ItemUpgradeEx.srf";
+		surface_up 	= "srfItemUpgradeBtnSelectUp";
+		surface_down 	= "srfItemUpgradeBtnSelectDown";
+		surface_focus 	= "srfItemUpgradeBtnSelectFoc";
+		surface_disable = "srfItemUpgradeBtnSelectDis";
 	}
 }dialog dlgMain
 {
@@ -184972,7 +185705,81 @@ surface "srfGuardCrash"
 	handle		= 0;
 	blend		= 0;
 }
-surface "srfPCBarBack"
+dialog dlgMain
+{
+	x			= 0;
+ 	y 			= 0;
+	width			= 320;
+	height			= 480;
+
+	titlebar_x		= 0;
+	titlebar_y		= 0;
+	titlebar_width		= 277;
+	titlebar_height		= 20;
+
+	surface_file 		= "GameCommon.srf";
+	surface	     		= "srfDialog";
+
+	button	ExitButton
+	{
+		x			= 300;
+		y			= 4;
+		width			= 16;
+		height			= 16;
+
+		surface_file 		= "GameCommon.srf";
+		surface_up 		= "srfClose2BtnUp";
+		surface_down 		= "srfClose2BtnDown";
+		surface_focus 		= "srfClose2BtnFoc";
+		surface_disable		= "srfClose2BtnDis";
+	}
+
+	staticbox TitleNameStaticBox
+	{
+		x			= 30;
+	 	y 			= 2;
+		width			= 145;
+		height			= 14;
+
+		font_name       	= Default;
+		enabled         	= false;
+
+        	font_height		= 100;
+		text_style		= left;
+		text_color_red		= 255;
+		text_color_green	= 255;
+		text_color_blue		= 255;
+	}
+
+	tabbutton SmithyTabButton
+	{
+		x 			= 20;
+		y 			= 30;
+		width			= 279;
+		height			= 22;
+
+		surface_file 		= "GameCommon.srf";
+		initindex		= 0;	
+
+		surface_left		= srfTabLeft;
+		surface_center		= srfTabCenter;
+		surface_right		= srfTabRight;
+		
+		surface_sel_left	= srfTabSelLeft;
+		surface_sel_center	= srfTabSelCenter;
+		surface_sel_right	= srfTabSelRight;
+
+		surface_foc_left	= srfTabFocLeft;
+		surface_foc_center	= srfTabFocCenter;
+		surface_foc_right	= srfTabFocRight;
+
+		surface_line		= srfTabLine;
+
+		tabtext_margin_x	= 8;
+		tabtext_margin_y	= 3;
+		tab_unsel_width		= 136;
+	}
+}surface "srfPCBarBack"
 {
 	resource_file	= "Game.rsr";
 	resource_name	= "rsrMain2";
